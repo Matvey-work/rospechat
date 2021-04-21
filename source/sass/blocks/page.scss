@@ -1,0 +1,47 @@
+// html {
+//   font-family: "Comfortaa", "Open Sans Condensed", "OpenSans CondLight", "Open Sans", "HelveticaNeueCondensedBold", "Arial", sans-serif;
+// }
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.page-body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Futura PT", "Arial", sans-serif;
+  // display: grid;
+  // grid-template-rows: min-content 1fr min-content;
+
+  &--bg::before {
+    content: "";
+    position: absolute;
+    width: 49%;
+    height: 670px;
+    top: 77px;
+    right: 0;
+    background-image: url("../img/express-print-img.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+// a {
+
+// }
+
+// p {
+
+// }
+
+// h2 {
+
+// }

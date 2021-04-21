@@ -1,0 +1,32 @@
+.drawing__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.drawing__block {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 525px;
+  height: 265px;
+  padding-left: 35px;
+}
+
+.drawing__title {
+  color: #EFD6AC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.drawing__text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  width: 490px;
+}

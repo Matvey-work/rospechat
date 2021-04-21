@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+
+  & .request {
+    display: flex;
+    width: 165px;
+    height: 100%;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #183A37;
+    text-decoration: none;
+  }
+}
+
+
+
+
+

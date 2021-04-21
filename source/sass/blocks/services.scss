@@ -1,0 +1,133 @@
+.services {
+  position: relative;
+  margin-top: 100px;
+
+  &--bg::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 52%;
+    height: 311px;
+    background-color: #432534;
+  }
+}
+
+.services__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__block-left,
+.services__block-right {
+  display: flex;
+  flex-direction: column;
+  // width: auto;
+
+}
+
+.services__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  margin-top: 0;
+}
+
+.services__sub-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  width: 415px;
+}
+
+.services__block-left-top,
+.services__block-left-bottom,
+.services__block-right-top,
+.services__block-right-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 340px;
+  width: 500px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 50px;
+}
+
+.services__block-right {
+  z-index: 2;
+  margin-left: 170px;
+  margin-right: 0;
+}
+
+.services__block-left-top {
+  background-image: url("../img/services-img1.jpg");
+}
+
+.services__block-left-bottom {
+  background-image: url("../img/services-img2.jpg");
+}
+
+.services__block-right-top {
+  margin-right: 0;
+  background-image: url("../img/services-img3.jpg");
+}
+
+.services__block-right-bottom {
+  margin-right: 0;
+  background-image: url("../img/services-img4.jpg");
+}
+
+.services__request-text {
+  color: #f6f6f6;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.services__request-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #04151f;
+  background-color: #EFD6AC;
+  width: 170px;
+  height: 44px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.block-inset {
+  display: flex;
+  flex-direction: column;
+  width: 244px;
+  height: 35%;
+  padding-left: 15px;
+  color: #fff;
+  background-color: rgba(24, 58, 55, 0.9);
+
+  & a {
+    margin-top: 0;
+    color: #EFD6AC;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.block-inset__text-top {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.block-inset__text-bottom {
+  margin-top: 0;
+  margin-bottom: 15px;
+}

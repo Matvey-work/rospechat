@@ -1,0 +1,114 @@
+.our-contacts {
+  background-image: url("../img/map-contacts-img.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 545px;
+  position: relative;
+}
+
+
+.popular-questions--contacts {
+  margin-top: 0;
+}
+
+.our-contacts__block-left {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background-color: rgba(67, 37, 52, 0.89);
+  z-index: 2501;
+}
+// .our-contacts__container {
+//   z-index: 2502;
+// }
+
+.our-contacts__adress {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5%;
+  z-index: 2502;
+}
+
+.our-contacts__title {
+  color: #f6f6f6;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+}
+
+.our-contacts__adress-top,
+.our-contacts__adress-bottom {
+  color: #fff;
+
+  & h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.block-contacts {
+  margin-left: -10px;
+  & p {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      top: -5px;
+      left: -30px;
+      background-image: url("../img/adress-gold.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 40px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 24px;
+      top: auto;
+      left: -30px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  & .our-contacts__mail {
+    &::before {
+      background-image: url("../img/e-mail-gold.svg");
+    }
+  }
+
+  & .our-contacts__tel {
+    &::before {
+      background-image: url("../img/phone-call-gold.svg");
+    }
+  }
+}
+
+// .map {
+//   display: flex;
+// }
+

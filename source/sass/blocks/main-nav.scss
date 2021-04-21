@@ -1,0 +1,18 @@
+.main-nav {
+  margin-right: 17px;
+  margin-left: 20px;
+}
+
+.main-nav__link {
+  color: #04151f;
+  text-decoration: none;
+  // margin-left: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 10px;
+
+  &--active {
+    color: #CB000D;
+  }
+}

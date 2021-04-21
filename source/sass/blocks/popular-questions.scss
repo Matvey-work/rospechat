@@ -1,0 +1,66 @@
+.popular-questions {
+  background-color: #f6f6f6;
+  min-height: 628px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.popular-questions__title {
+  color: #432534;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  text-align: center;
+  // margin-top: 100px;
+  padding-top: 100px;
+}
+
+.popular-questions__text {
+  color: #1A1A18;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.popular-questions__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.popular-questions__item {
+  background-color: #fff;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  position: relative;
+  margin-bottom: 8px;
+
+  & span {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 24px;
+    color: #183a37;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    top: 20px;
+    right: 20px;
+    background-image: url("../img/plus-red.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}

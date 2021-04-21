@@ -1,0 +1,57 @@
+.print-drawing {
+  position: relative;
+  background-color: #f6f6f6;
+  background-image: url("../img/print-drawing-img.jpg");
+  background-position: left 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 578px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 102px;
+    right: 10%;
+    width: 255px;
+    height: 375px;
+    background-image: url("../img/group-point.svg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}
+
+// .print-drawing__container {
+//   display: flex;
+//   align-items: center;
+//   height: 100%;
+// }
+
+.print-drawing__block {
+  // display: flex;
+  // flex-direction: column;
+  // margin-top: auto;
+  // margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #432534;
+  // width: 525px;
+  // height: 265px;
+  // padding-left: 35px;
+}
+
+// .print-drawing__title {
+//   color: #EFD6AC;
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 32px;
+//   line-height: 24px;
+// }
+
+// .print-drawing__text {
+//   color: #ffffff;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 22px;
+//   line-height: 25px;
+//   width: 488px;
+// }

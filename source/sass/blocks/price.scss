@@ -1,0 +1,72 @@
+.price {
+  display: flex;
+  position: relative;
+  background-color: #183A37;
+  height: 498px;
+  margin-top: 100px;
+
+  &--bg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 38%;
+    height: 100%;
+    background-image: url("../img/price-img.jpg");
+    background-repeat: no-repeat;
+    // background-position: 0 0;
+    background-position-x: right;
+
+    background-size: cover;
+  }
+}
+
+.price__title {
+  color: #f6f6f6;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 54px;
+  width: 733px;
+  margin-top: 100px;
+}
+
+.price__sub-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.price__link {
+  position: relative;
+  text-decoration: none;
+  color: #04151f;
+  background-color: #EFD6AC;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  width: 245px;
+  height: 68px;
+  padding-left: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 82%;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/price-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}

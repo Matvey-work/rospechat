@@ -1,0 +1,27 @@
+.stitching-drawing {
+  position: relative;
+  background-color: #f6f6f6;
+  background-image: url("../img/stitching-drawing-img.jpg");
+  background-position: left 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 578px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 102px;
+    right: 10%;
+    width: 255px;
+    height: 375px;
+    background-image: url("../img/group-point.svg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.stitching-drawing__block {
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #432534;
+}
