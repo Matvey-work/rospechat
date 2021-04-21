@@ -1762,6 +1762,54 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   .block-contacts .our-contacts__tel::before {
     background-image: url("../img/phone-call-gold.svg"); }
 
+.service-cost {
+  background-image: url("../img/price-page-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 541px;
+  position: relative; }
+
+.service-cost__block-left {
+  position: absolute;
+  top: 30%;
+  background-color: #183A37;
+  width: 37%;
+  z-index: 3; }
+
+.service-cost__title {
+  color: #EFD6AC;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  width: 240px;
+  margin-left: auto;
+  margin-right: 5%; }
+
+.service-cost__container {
+  display: flex;
+  align-items: center;
+  height: 100%; }
+
+.service-cost__block-text {
+  position: relative;
+  background-color: #432534;
+  padding-left: 71px;
+  padding-right: 33px;
+  width: 70%;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin-left: auto;
+  margin-right: 0; }
+
+.service-cost__text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px; }
+
 .services-more-btn {
   color: #EFD6AC;
   font-style: normal;
