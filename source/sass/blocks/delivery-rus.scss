@@ -1,0 +1,122 @@
+.delivery-rus {
+  font-family: "Futura PT";
+  background-color: #f6f6f6;
+}
+
+.delivery-rus__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  text-align: center;
+  color: #432534;
+  margin-top: 100px;
+}
+
+.delivery-rus__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.delivery-rus__block-item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 450px;
+  background-color: #fff;
+}
+
+.delivery-rus__text-title {
+  margin-left: 100px;
+  margin-bottom: 19px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 26px;
+  line-height: 28px;
+  color: #432534;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 65px;
+    top: auto;
+    left: -75px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--spb::before {
+    background-image: url("../img/delivery-truck.svg");
+  }
+
+  &--msk::before {
+    background-image: url("../img/delivery-courier.svg");
+  }
+
+  &--rus::before {
+    background-image: url("../img/package-box.svg");
+  }
+}
+
+.delivery-rus__text-top {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #04151F;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.delivery-rus__text-time {
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  & span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #04151F;
+    margin-left: 33px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      top: 2px;
+      left: -28px;
+      background-image: url("../img/clock-red.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.delivery-rus__text-cost {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 24px;
+  color: #432534;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.delivery-rus__text-cost-bottom {
+  margin-top: 0;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #04151F;
+}

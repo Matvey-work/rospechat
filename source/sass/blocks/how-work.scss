@@ -1,0 +1,84 @@
+.how-work {
+  background-color: #f6f6f6;
+  height: 580px;
+  padding-bottom: 50px;
+}
+
+.how-work__title {
+  color: #432534;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  margin-top: 100px;
+}
+
+.how-work__text {
+  color: #04151F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.how-work__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-work__item {
+  background-color: #fff;
+  width: 269px;
+  height: 197px;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-work__block-text-top {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 23px;
+  color: #183A37;
+  position: relative;
+  margin-left: 99px;
+  margin-bottom: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 57px;
+    height: 57px;
+    top: auto;
+    left: -75px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--registration::before {
+    background-image: url("../img/registration.svg");
+  }
+
+  &--calculation::before {
+    background-image: url("../img/calculation.svg");
+  }
+
+  &--work::before {
+    background-image: url("../img/work.svg");
+  }
+
+  &--order::before {
+    background-image: url("../img/order.svg");
+  }
+}
+
+.how-work__block-text-bottom {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #04151F;
+  margin-left: 20px;
+  width: 239px;
+}
