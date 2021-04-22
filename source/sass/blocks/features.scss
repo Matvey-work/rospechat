@@ -15,6 +15,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }
 
@@ -34,6 +38,10 @@
   height: 170px;
   text-align: center;
   padding-left: 3%;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .features__title {

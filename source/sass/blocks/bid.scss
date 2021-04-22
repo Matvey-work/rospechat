@@ -1,0 +1,155 @@
+.bid {
+  font-family: "Futura PT";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 300px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(67, 37, 52, 0.78);
+  // filter: blur(2px);
+}
+
+.bid__block {
+  background-color: #f6f6f6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 790px;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+  // filter: none;
+}
+
+.bid__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 54px;
+  text-align: center;
+  color: #432534;
+  padding-top: 50px;
+
+  &--thanks {
+    padding-top: 100px;
+  }
+}
+
+.bid__form-top {
+  margin-bottom: 25px;
+}
+
+.bid__input:first-child {
+  margin-right: 20px;
+}
+
+.bid__input::placeholder {
+  padding-left: 17px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 22px;
+  color: #04151F;
+}
+
+.bid__input,
+.bid__submit {
+  border: none;
+  outline: none;
+  width: 220px;
+  height: 56px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+}
+
+.bid__input:invalid {
+  border: 1px solid #CB000D;
+}
+
+.bid__submit {
+  height: 58px;
+  background-color: #04151F;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bid__label-conf {
+  display: flex;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  // text-decoration: underline;
+  color: #432534;
+  position: relative;
+  text-align: left;
+  margin-left: 60px;
+  margin-right: auto;
+  border-bottom: 1px solid #432534;
+  width: fit-content;
+}
+
+.bid__label-conf::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -20px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #432534;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+#conf:checked+.bid__label-conf::after {
+  position: absolute;
+  content: "\2713";
+  top: 1px;
+  left: -18px;
+  width: 17px;
+  height: 17px;
+}
+
+.bid__close-btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+  background-image: url("../img/cancel.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.bid__check {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  left: 47%;
+  background-image: url("../img/check-vector.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.bid__thanks-text {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #04151F;
+}

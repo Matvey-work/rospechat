@@ -26,36 +26,38 @@ $(document).ready(function(){
     cssEase: 'linear',
   });
 });
-// $('.slider-nav').slick({
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   centerMode: true,
-//   focusOnSelect: true
-// });
 
-// $('.vacancy-item').on('click', function(){
-//   if ($(this).find('.more-info').hasClass('visible')) {
-//     $(this).find('.more-info').removeClass('visible');
-//   } else {
-//     $('.more-info').removeClass('visible');
-//     $(this).find('.more-info').addClass('visible');
-//   }
-// });
+// const Keys = {
+//   ESCAPE: 'Escape',
+//   ESC: 'Esc',
+// };
 
-// var vacancy_list = $('.vacancy-item');
+// const templateBid = document.querySelector('#bid').content;
+// const popupBid = templateBid.querySelector('.bid').cloneNode(true);
+// const bidButton = popupBid.querySelector('.bid__close-btn');
 
-// $('.vacancy-item').on('click', function(){
-//   if ($(this).hasClass('active')) {
-//     $(this).removeClass('active');
-//   } else {
-//     for (var i = 0; i < vacancy_list.length; i++) {
-//       vacancy_list[i].classList.remove('active');
+// const closePopup = (popup, button) => {
+//   document.addEventListener('click', () => {
+//     popup.remove();
+//   }, {once: true});
+
+//   document.addEventListener('keydown', (evt) => {
+//     if (evt.key === Keys.ESCAPE || evt.key === Keys.ESC) {
+//       popup.remove();
 //     }
-//     $(this).addClass('active');
+//   }, {once: true});
 
+//   if (button) {
+//     button.addEventListener('click', () => {
+//       popup.remove();
+//     }, {once: true});
 //   }
+// };
 
-// });
+// const showBid = () => {
+//   document.body.append(popupBid);
+// };
+
 
 
 // let navMain = document.querySelector('.main-nav');
