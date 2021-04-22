@@ -2,6 +2,15 @@
   margin-top: 100px;
 }
 
+.types-service__title {
+  color: #432534;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  text-align: center;
+}
+
 .types-service__list-btn {
   display: flex;
   width: 100%;
@@ -79,5 +88,40 @@
 
   & td:nth-child(2), td:nth-child(3) {
     text-align: center;
+  }
+}
+
+.types-service__get-price {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #432534;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 5px;
+  position: relative;
+  width: 248px;
+  height: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding-left: 40px;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 34%;
+    right: 30px;
+    background-image: url("../img/get-price-icon.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 }

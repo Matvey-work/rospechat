@@ -1,0 +1,75 @@
+.drawing-section {
+  background-color: #432534;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 617px;
+
+  &--copy {
+  background-image: url("../img/services-img4.jpg");
+  }
+
+  &--print {
+    background-image: url("../img/express-print-img.jpg");
+  }
+
+  &--scan {
+    background-image: url("../img/scan-img-2.jpg");
+  }
+
+  &--folding {
+    background-image: url("../img/folding-img-1.jpg");
+  }
+
+  &--stitching {
+    background-image: url("../img/stitching-img-1.jpg");
+  }
+
+  & p {
+    width: 598px;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.drawing-section__title {
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  color: #EFD6AC;
+}
+
+.drawing-section__btn {
+  display: flex;
+  align-items: center;
+  padding-left: 53px;
+  width: 235px;
+  height: 68px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #04151F;
+  background-color: #EFD6AC;
+  position: relative;
+  margin-top: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 32%;
+    right: 40px;
+    background-image: url("../img/checkout-img.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}

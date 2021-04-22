@@ -1813,6 +1813,14 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .types-service {
   margin-top: 100px; }
 
+.types-service__title {
+  color: #432534;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  text-align: center; }
+
 .types-service__list-btn {
   display: flex;
   width: 100%; }
@@ -1867,6 +1875,95 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     padding-left: 20px; }
   .types-service__item table td:nth-child(2), .types-service__item table td:nth-child(3) {
     text-align: center; }
+
+.types-service__get-price {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #432534;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 5px;
+  position: relative;
+  width: 248px;
+  height: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding-left: 40px; }
+  .types-service__get-price::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 34%;
+    right: 30px;
+    background-image: url("../img/get-price-icon.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+
+.drawing-section {
+  background-color: #432534;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 617px; }
+  .drawing-section--copy {
+    background-image: url("../img/services-img4.jpg"); }
+  .drawing-section--print {
+    background-image: url("../img/express-print-img.jpg"); }
+  .drawing-section--scan {
+    background-image: url("../img/scan-img-2.jpg"); }
+  .drawing-section--folding {
+    background-image: url("../img/folding-img-1.jpg"); }
+  .drawing-section--stitching {
+    background-image: url("../img/stitching-img-1.jpg"); }
+  .drawing-section p {
+    width: 598px;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px; }
+
+.drawing-section__title {
+  margin-top: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 52px;
+  color: #EFD6AC; }
+
+.drawing-section__btn {
+  display: flex;
+  align-items: center;
+  padding-left: 53px;
+  width: 235px;
+  height: 68px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #04151F;
+  background-color: #EFD6AC;
+  position: relative;
+  margin-top: 45px; }
+  .drawing-section__btn::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 32%;
+    right: 40px;
+    background-image: url("../img/checkout-img.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
 
 .services-more-btn {
   color: #EFD6AC;
