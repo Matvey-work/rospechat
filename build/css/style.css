@@ -1325,7 +1325,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 102px;
-    right: 10%;
+    right: 3%;
     width: 255px;
     height: 375px;
     background-image: url("../img/group-point.svg");
@@ -1349,7 +1349,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 102px;
-    left: 10%;
+    left: 3%;
     width: 255px;
     height: 375px;
     background-image: url("../img/group-point.svg");
@@ -1379,7 +1379,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 102px;
-    right: 10%;
+    right: 3%;
     width: 255px;
     height: 375px;
     background-image: url("../img/group-point.svg");
@@ -1403,7 +1403,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 102px;
-    left: 10%;
+    left: 3%;
     width: 255px;
     height: 375px;
     background-image: url("../img/group-point.svg");
@@ -1430,7 +1430,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 102px;
-    right: 10%;
+    right: 3%;
     width: 255px;
     height: 375px;
     background-image: url("../img/group-point.svg");
@@ -1504,7 +1504,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   position: absolute;
   top: 30%;
   left: 0;
-  width: 34%;
+  width: 33%;
   height: 184px;
   background-color: #432534;
   z-index: 1; }
@@ -1774,7 +1774,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   position: absolute;
   top: 30%;
   background-color: #183A37;
-  width: 37%;
+  width: 35%;
   z-index: 3; }
 
 .service-cost__title {
@@ -1809,6 +1809,64 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-weight: normal;
   font-size: 20px;
   line-height: 24px; }
+
+.types-service {
+  margin-top: 100px; }
+
+.types-service__list-btn {
+  display: flex;
+  width: 100%; }
+
+.types-service__btn {
+  border: 1px solid #EFD6AC;
+  box-sizing: border-box;
+  cursor: pointer; }
+  .types-service__btn-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #432534; }
+  .types-service__btn--dop {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px; }
+
+.types-service__btn--active {
+  background-color: #EFD6AC; }
+
+.types-service__item table {
+  margin-top: 60px;
+  border-collapse: collapse; }
+  .types-service__item table tr {
+    height: 65px;
+    box-sizing: border-box;
+    border: 1px solid #f6f6f6; }
+  .types-service__item table tr:first-child {
+    background-color: #183A37; }
+  .types-service__item table tr:nth-child(2n) {
+    background-color: #f6f6f6; }
+  .types-service__item table th {
+    color: #fff;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 25px; }
+  .types-service__item table th:first-child {
+    text-align: start;
+    padding-left: 20px; }
+  .types-service__item table td {
+    color: #04151F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px; }
+  .types-service__item table td:first-child {
+    text-align: start;
+    padding-left: 20px; }
+  .types-service__item table td:nth-child(2), .types-service__item table td:nth-child(3) {
+    text-align: center; }
 
 .services-more-btn {
   color: #EFD6AC;
