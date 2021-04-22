@@ -524,6 +524,7 @@ template {
   justify-content: flex-start; }
 
 .header {
+  font-family: "Futura PT";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -542,6 +543,7 @@ template {
     text-decoration: none; }
 
 .main-nav {
+  font-family: "Futura PT";
   margin-right: 17px;
   margin-left: 20px; }
 
@@ -589,6 +591,7 @@ template {
     background-image: url("../img/adress.svg"); }
 
 .express-print {
+  font-family: "Futura PT";
   background-color: #F6F6F6;
   min-height: 670px; }
 
@@ -627,6 +630,7 @@ template {
   border-radius: 5px; }
 
 .director {
+  font-family: "Futura PT";
   display: flex;
   min-height: 703px;
   background-image: linear-gradient(90deg, #183A37 0%, #183A37 42%, #fff 42%, #fff 100%);
@@ -682,6 +686,7 @@ template {
   line-height: 52px; }
 
 .features {
+  font-family: "Futura PT";
   display: flex;
   min-height: 534px;
   position: relative; }
@@ -760,6 +765,7 @@ template {
   line-height: 24px; }
 
 .services {
+  font-family: "Futura PT";
   position: relative;
   margin-top: 100px; }
   .services--bg::before {
@@ -872,6 +878,7 @@ template {
   margin-bottom: 15px; }
 
 .price {
+  font-family: "Futura PT";
   display: flex;
   position: relative;
   background-color: #183A37;
@@ -934,6 +941,7 @@ template {
     background-repeat: no-repeat; }
 
 .our-team {
+  font-family: "Futura PT";
   margin-top: 100px; }
 
 .our-team__sup-title {
@@ -978,6 +986,7 @@ template {
   line-height: 24px; }
 
 .production {
+  font-family: "Futura PT";
   background-color: #f6f6f6;
   overflow: hidden;
   display: block;
@@ -996,6 +1005,7 @@ template {
   margin-top: 100px; }
 
 .tech {
+  font-family: "Futura PT";
   position: relative;
   background-image: linear-gradient(#fff 15%, #432534 15%, #432434 100%);
   min-height: 625px; }
@@ -1148,6 +1158,7 @@ div.slick-slide div.slider-img img {
     height: 15px; }
 
 .delivery {
+  font-family: "Futura PT";
   margin-top: 100px;
   margin-bottom: 100px; }
 
@@ -1197,6 +1208,7 @@ div.slick-slide div.slider-img img {
     background-image: url("../img/delivery8.svg"); }
 
 .contact-us {
+  font-family: "Futura PT";
   background-color: #183a37;
   height: 486px;
   padding-top: 100px;
@@ -1296,7 +1308,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     position: absolute;
     content: "";
     top: 10%;
-    right: 30%;
+    right: 27%;
     width: 345px;
     height: 74px;
     background-image: url("../img/tipograff.svg");
@@ -1305,8 +1317,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   .contact-us__block-right::after {
     position: absolute;
     content: "";
-    top: 30%;
-    right: 27%;
+    top: 33%;
+    right: 23%;
     width: 376px;
     height: 273px;
     background-image: url("../img/contact-us-print.jpg");
@@ -1314,6 +1326,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-repeat: no-repeat; }
 
 .print-drawing {
+  font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
   background-image: url("../img/print-drawing-img.jpg");
@@ -1338,6 +1351,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-color: #432534; }
 
 .copy-drawing {
+  font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
   background-image: url("../img/copy-drawing-img.jpg");
@@ -1368,6 +1382,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   width: 500px; }
 
 .folding-drawing {
+  font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
   background-image: url("../img/folding-drawing-img.jpg");
@@ -1392,6 +1407,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-color: #432534; }
 
 .scan-drawing {
+  font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
   background-image: url("../img/scan-drawing-img.jpg");
@@ -1419,6 +1435,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   padding-left: 35px; }
 
 .stitching-drawing {
+  font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
   background-image: url("../img/stitching-drawing-img.jpg");
@@ -1443,7 +1460,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-color: #432534; }
 
 .main__privacy {
-  font-family: "Futura PT", "Arial",sans-serif;
+  font-family: "Futura PT";
   margin-top: 60px;
   margin-bottom: 100px; }
 
@@ -1463,6 +1480,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   line-height: 24px; }
 
 .drawing__container {
+  font-family: "Futura PT";
   display: flex;
   align-items: center;
   height: 100%; }
@@ -1492,6 +1510,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   width: 490px; }
 
 .about-company {
+  font-family: "Futura PT";
   background-image: url("../img/about-company-img.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -1555,6 +1574,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   margin-top: 0; }
 
 .our-production {
+  font-family: "Futura PT";
   background-image: linear-gradient(90deg, #fff 0, #fff 65%, #EFD6AC 65%, #EFD6AC 100%);
   padding-top: 100px;
   margin-bottom: 270px;
@@ -1634,6 +1654,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   width: 235px; }
 
 .popular-questions {
+  font-family: "Futura PT";
   background-color: #f6f6f6;
   min-height: 628px;
   margin-top: 100px;
@@ -1690,6 +1711,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-repeat: no-repeat; }
 
 .our-contacts {
+  font-family: "Futura PT";
   background-image: url("../img/map-contacts-img.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -1773,6 +1795,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-image: url("../img/phone-call-gold.svg"); }
 
 .service-cost {
+  font-family: "Futura PT";
   background-image: url("../img/price-page-img.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1821,6 +1844,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   line-height: 24px; }
 
 .types-service {
+  font-family: "Futura PT";
   margin-top: 100px; }
 
 .types-service__title {
@@ -1917,6 +1941,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-repeat: no-repeat; }
 
 .drawing-section {
+  font-family: "Futura PT";
   background-color: #432534;
   background-position: right 50%;
   background-repeat: no-repeat;
@@ -1976,6 +2001,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-repeat: no-repeat; }
 
 .how-work {
+  font-family: "Futura PT";
   background-color: #f6f6f6;
   height: 580px;
   padding-bottom: 50px; }
@@ -2146,6 +2172,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   color: #04151F; }
 
 .services-more-btn {
+  font-family: "Futura PT";
   color: #EFD6AC;
   font-style: normal;
   font-weight: 450;
@@ -2164,553 +2191,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-position: 50% 50%;
     background-repeat: no-repeat; }
 
-.why-us {
-  background-image: url("../img/why.png");
-  background-repeat: repeat-x;
-  background-size: contain;
-  min-height: 800px;
-  margin-bottom: 0; }
-  @media (min-width: 320px) {
-    .why-us {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-top: 10px; } }
-  @media (min-width: 768px) {
-    .why-us {
-      padding-top: 10px; } }
-  @media (min-width: 1024px) {
-    .why-us {
-      padding-top: 20px;
-      padding-bottom: 20px; } }
-  @media (min-width: 1300px) {
-    .why-us {
-      min-height: 800px;
-      padding-top: 40px;
-      padding-bottom: 40px; } }
-  @media (min-width: 1800px) {
-    .why-us {
-      min-height: 800px;
-      padding-bottom: 60px; } }
-
-.why-us h2 {
-  color: #666;
-  margin-bottom: 20px;
-  background-image: url("../img/h2_why.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media (min-width: 320px) {
-    .why-us h2 {
-      font-size: 20px; } }
-  @media (min-width: 1024px) {
-    .why-us h2 {
-      font-size: 28px; } }
-  @media (min-width: 1300px) {
-    .why-us h2 {
-      background-position: 50% 45%;
-      font-size: 40px; } }
-  @media (min-width: 1800px) {
-    .why-us h2 {
-      background-position: 50% 45%;
-      width: 100%;
-      font-size: 50px; } }
-
-.why-us__container {
-  display: flex;
-  justify-content: space-between; }
-  @media (min-width: 320px) {
-    .why-us__container {
-      flex-wrap: wrap; } }
-  @media (min-width: 1024px) {
-    .why-us__container {
-      min-height: 540px; } }
-  @media (min-width: 1300px) {
-    .why-us__container {
-      flex-wrap: nowrap;
-      min-height: 660px; } }
-  @media (min-width: 1800px) {
-    .why-us__container {
-      margin-top: 70px; } }
-
-.views-block {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  @media (min-width: 320px) {
-    .views-block {
-      min-width: 100%;
-      padding-bottom: 20px; } }
-  @media (min-width: 1300px) {
-    .views-block {
-      min-width: 25%; } }
-  .views-block::before {
-    content: "";
-    position: absolute;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain; }
-    @media (min-width: 320px) {
-      .views-block::before {
-        display: none; } }
-    @media (min-width: 768px) {
-      .views-block::before {
-        display: block;
-        left: 10%;
-        top: -10px;
-        width: 185px;
-        height: 180px; } }
-    @media (min-width: 1024px) {
-      .views-block::before {
-        left: 10%;
-        top: -10px;
-        width: 185px;
-        height: 180px; } }
-    @media (min-width: 1300px) {
-      .views-block::before {
-        width: 70%;
-        height: 55%;
-        top: 0;
-        left: 20%; } }
-
-.views-block a {
-  display: flex;
-  background-color: #4f4f4f;
-  font-family: "Arial", sans-serif;
-  color: #fff;
-  text-decoration: none;
-  padding: 15px;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .views-block a {
-      width: 25%;
-      justify-content: center; } }
-  @media (min-width: 1024px) {
-    .views-block a {
-      width: 25%;
-      justify-content: center; } }
-  @media (min-width: 1300px) {
-    .views-block a {
-      width: 70%;
-      margin-left: 20px;
-      margin-top: 240px;
-      font-size: 24px; } }
-  @media (min-width: 1800px) {
-    .views-block a {
-      margin-top: 340px;
-      font-size: 28px;
-      align-items: center;
-      justify-content: center; } }
-  .views-block a:hover {
-    text-decoration: underline; }
-
-.views-block p {
-  font-family: "Arial", sans-serif;
-  position: relative;
-  background-color: transparent;
-  align-items: center;
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .views-block p {
-      max-width: 40%;
-      text-align: center;
-      margin-left: 30px; } }
-  @media (min-width: 1024px) {
-    .views-block p {
-      max-width: 40%;
-      text-align: center; } }
-  @media (min-width: 1300px) {
-    .views-block p {
-      font-size: 22px;
-      max-width: 80%;
-      text-align: center; } }
-  @media (min-width: 1800px) {
-    .views-block p {
-      font-size: 24px; } }
-
-.views-block__one {
-  position: relative; }
-  .views-block__one::before {
-    background-image: url("../img/why_1.png"); }
-
-@media (min-width: 768px) {
-  .views-block__two {
-    height: 180px; } }
-
-@media (min-width: 1300px) {
-  .views-block__two {
-    height: 60%; } }
-
-.views-block__two::before {
-  background-image: url("../img/why_2.png"); }
-  @media (min-width: 1024px) {
-    .views-block__two::before {
-      height: 100%; } }
-  @media (min-width: 1300px) {
-    .views-block__two::before {
-      height: 60%; } }
-
-@media (max-width: 767px) {
-  .views-block__three a {
-    display: flex;
-    justify-content: center;
-    width: 80%; }
-    .views-block__three a span {
-      text-align: center; } }
-
-@media (min-width: 768px) {
-  .views-block__three {
-    height: 180px; } }
-
-@media (min-width: 1300px) {
-  .views-block__three {
-    height: 60%; } }
-
-.views-block__three a {
-  margin-bottom: 20px; }
-  @media (max-width: 767px) {
-    .views-block__three a {
-      margin-bottom: 5px; } }
-
-.views-block__three::before {
-  background-image: url("../img/why_3.png"); }
-  @media (min-width: 1024px) {
-    .views-block__three::before {
-      height: 100%; } }
-  @media (min-width: 1300px) {
-    .views-block__three::before {
-      height: 60%; } }
-
-.views-block__four {
-  margin-right: 0; }
-  .views-block__four::before {
-    background-image: url("../img/why_4.png"); }
-
-.team-part {
-  background-image: url("../img/team2.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-  @media (min-width: 1024px) {
-    .team-part {
-      padding-bottom: 50px; } }
-
-.team-part h2 {
-  color: black;
-  font-family: "OpenSans CondLight", sans-serif;
-  background-image: url("../img/h2_team.png");
-  background-position: 50% 45%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    .team-part h2 {
-      font-size: 24px; } }
-  @media (min-width: 1300px) {
-    .team-part h2 {
-      font-size: 36px; } }
-  @media (min-width: 1800px) {
-    .team-part h2 {
-      font-size: 48px; } }
-
-.team-part__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 1300px) {
-    .team-part__list {
-      padding-bottom: 40px; } }
-  @media (min-width: 1800px) {
-    .team-part__list {
-      padding-bottom: 80px;
-      padding-top: 30px; } }
-  .team-part__list p {
-    color: #fff;
-    background-color: #4f4f4f;
-    padding: 10px;
-    text-align: center; }
-    @media (min-width: 1300px) {
-      .team-part__list p {
-        font-size: 24px; } }
-    @media (min-width: 1800px) {
-      .team-part__list p {
-        font-size: 28px; } }
-
-.team-part__list-top {
-  display: flex; }
-  @media (min-width: 320px) {
-    .team-part__list-top {
-      flex-direction: column; } }
-  @media (min-width: 768px) {
-    .team-part__list-top {
-      flex-direction: row; } }
-  @media (min-width: 1024px) {
-    .team-part__list-top {
-      margin-bottom: 10px; } }
-  @media (min-width: 1300px) {
-    .team-part__list-top {
-      margin-bottom: 0px; } }
-  @media (min-width: 1800px) {
-    .team-part__list-top {
-      margin-bottom: 50px; } }
-  .team-part__list-top p:first-child {
-    position: relative;
-    white-space: nowrap;
-    height: fit-content;
-    align-self: center; }
-    @media (min-width: 768px) {
-      .team-part__list-top p:first-child {
-        margin-left: 100px; } }
-    @media (min-width: 1024px) {
-      .team-part__list-top p:first-child {
-        margin-left: 150px; } }
-    @media (min-width: 1300px) {
-      .team-part__list-top p:first-child {
-        margin-left: 150px; } }
-    @media (min-width: 1800px) {
-      .team-part__list-top p:first-child {
-        margin-left: 400px; } }
-    .team-part__list-top p:first-child::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/team_1.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      @media (min-width: 768px) {
-        .team-part__list-top p:first-child::before {
-          top: -30px;
-          left: -100px;
-          width: 100px;
-          height: 100px; } }
-      @media (min-width: 1024px) {
-        .team-part__list-top p:first-child::before {
-          top: -40px;
-          left: -150px;
-          width: 120px;
-          height: 120px; } }
-      @media (min-width: 1300px) {
-        .team-part__list-top p:first-child::before {
-          top: -40px;
-          left: -150px;
-          width: 150px;
-          height: 150px; } }
-      @media (min-width: 1800px) {
-        .team-part__list-top p:first-child::before {
-          top: -60px;
-          left: -240px;
-          width: 200px;
-          height: 200px; } }
-  .team-part__list-top p:nth-child(2) {
-    position: relative; }
-    @media (min-width: 768px) {
-      .team-part__list-top p:nth-child(2) {
-        margin-left: 160px; } }
-    @media (min-width: 1024px) {
-      .team-part__list-top p:nth-child(2) {
-        margin-left: 250px; } }
-    @media (min-width: 1300px) {
-      .team-part__list-top p:nth-child(2) {
-        margin-left: 300px; } }
-    @media (min-width: 1800px) {
-      .team-part__list-top p:nth-child(2) {
-        margin-left: 500px; } }
-    .team-part__list-top p:nth-child(2)::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/team_2.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      @media (min-width: 768px) {
-        .team-part__list-top p:nth-child(2)::before {
-          top: -10px;
-          left: -110px;
-          width: 110px;
-          height: 110px; } }
-      @media (min-width: 1024px) {
-        .team-part__list-top p:nth-child(2)::before {
-          top: -20px;
-          left: -150px;
-          width: 120px;
-          height: 120px; } }
-      @media (min-width: 1300px) {
-        .team-part__list-top p:nth-child(2)::before {
-          top: -20px;
-          left: -150px;
-          width: 150px;
-          height: 150px; } }
-      @media (min-width: 1800px) {
-        .team-part__list-top p:nth-child(2)::before {
-          top: -30px;
-          left: -240px;
-          width: 200px;
-          height: 200px; } }
-
-.team-part__list-center {
-  display: flex; }
-  @media (min-width: 320px) {
-    .team-part__list-center {
-      flex-direction: column; } }
-  @media (min-width: 768px) {
-    .team-part__list-center {
-      flex-direction: row;
-      margin-bottom: 20px; } }
-  @media (min-width: 1024px) {
-    .team-part__list-center {
-      margin-bottom: 40px; } }
-  @media (min-width: 1300px) {
-    .team-part__list-center {
-      margin-bottom: 40px; } }
-  @media (min-width: 1800px) {
-    .team-part__list-center {
-      margin-bottom: 80px; } }
-  .team-part__list-center p:first-child {
-    position: relative;
-    white-space: nowrap;
-    height: fit-content;
-    align-self: center; }
-    @media (min-width: 768px) {
-      .team-part__list-center p:first-child {
-        margin-left: 150px; } }
-    @media (min-width: 1024px) {
-      .team-part__list-center p:first-child {
-        margin-left: 200px; } }
-    @media (min-width: 1300px) {
-      .team-part__list-center p:first-child {
-        margin-left: 250px; } }
-    @media (min-width: 1800px) {
-      .team-part__list-center p:first-child {
-        margin-left: 500px; } }
-    .team-part__list-center p:first-child::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/team_3.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      @media (min-width: 768px) {
-        .team-part__list-center p:first-child::before {
-          top: -30px;
-          left: -100px;
-          width: 100px;
-          height: 100px; } }
-      @media (min-width: 1024px) {
-        .team-part__list-center p:first-child::before {
-          top: -40px;
-          left: -120px;
-          width: 120px;
-          height: 120px; } }
-      @media (min-width: 1300px) {
-        .team-part__list-center p:first-child::before {
-          top: -40px;
-          left: -140px;
-          width: 150px;
-          height: 150px; } }
-      @media (min-width: 1800px) {
-        .team-part__list-center p:first-child::before {
-          top: -60px;
-          left: -240px;
-          width: 200px;
-          height: 200px; } }
-  .team-part__list-center p:nth-child(2) {
-    position: relative; }
-    @media (min-width: 768px) {
-      .team-part__list-center p:nth-child(2) {
-        margin-left: 150px; } }
-    @media (min-width: 1024px) {
-      .team-part__list-center p:nth-child(2) {
-        margin-left: 250px; } }
-    @media (min-width: 1300px) {
-      .team-part__list-center p:nth-child(2) {
-        margin-left: 280px; } }
-    @media (min-width: 1800px) {
-      .team-part__list-center p:nth-child(2) {
-        margin-left: 500px; } }
-    .team-part__list-center p:nth-child(2)::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/team_4.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: contain; }
-      @media (min-width: 768px) {
-        .team-part__list-center p:nth-child(2)::before {
-          top: -25px;
-          left: -110px;
-          width: 110px;
-          height: 110px; } }
-      @media (min-width: 1024px) {
-        .team-part__list-center p:nth-child(2)::before {
-          top: -30px;
-          left: -120px;
-          width: 120px;
-          height: 120px; } }
-      @media (min-width: 1300px) {
-        .team-part__list-center p:nth-child(2)::before {
-          top: -30px;
-          left: -150px;
-          width: 150px;
-          height: 150px; } }
-      @media (min-width: 1800px) {
-        .team-part__list-center p:nth-child(2)::before {
-          top: -30px;
-          left: -240px;
-          width: 200px;
-          height: 200px; } }
-
-.team-part__bottom-text {
-  position: relative;
-  align-self: center; }
-  @media (min-width: 768px) {
-    .team-part__bottom-text {
-      margin-left: 180px; } }
-  @media (min-width: 1024px) {
-    .team-part__bottom-text {
-      margin-left: 120px; } }
-  @media (min-width: 1300px) {
-    .team-part__bottom-text {
-      margin-left: 450px;
-      margin-right: 150px; } }
-  @media (min-width: 1800px) {
-    .team-part__bottom-text {
-      margin-left: 800px;
-      margin-right: 300px; } }
-  .team-part__bottom-text::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/team_5.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain; }
-    @media (min-width: 768px) {
-      .team-part__bottom-text::before {
-        top: -30px;
-        left: -100px;
-        width: 100px;
-        height: 100px; } }
-    @media (min-width: 1024px) {
-      .team-part__bottom-text::before {
-        top: -30px;
-        left: -120px;
-        width: 120px;
-        height: 120px; } }
-    @media (min-width: 1300px) {
-      .team-part__bottom-text::before {
-        top: -30px;
-        left: -140px;
-        width: 150px;
-        height: 150px; } }
-    @media (min-width: 1800px) {
-      .team-part__bottom-text::before {
-        top: -50px;
-        left: -240px;
-        width: 200px;
-        height: 200px; } }
-  .team-part__bottom-text span {
-    color: #eb1456; }
+.main-footer {
+  font-family: "Futura PT"; }
 
 .main-footer__container {
   display: flex;
@@ -2763,55 +2245,5 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
       padding: 0 30px; } }
   @media (min-width: 1300px) {
     .container {
-      max-width: 1170px;
+      max-width: 1200px;
       padding: 0 15px; } }
-
-.widgets {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  bottom: 10px;
-  width: 80px;
-  z-index: 10011; }
-  @media (min-width: 320px) {
-    .widgets {
-      left: 5px; } }
-  @media (min-width: 1300px) {
-    .widgets {
-      left: 10px; } }
-
-.widgets__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.widgets__link {
-  display: flex;
-  margin-bottom: 5px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 5px lightgray; }
-  @media (min-width: 320px) {
-    .widgets__link {
-      width: 50px;
-      height: 50px; } }
-  @media (min-width: 1300px) {
-    .widgets__link {
-      width: 70px;
-      height: 70px; } }
-  .widgets__link--wsp {
-    background-image: url("../img/whatsapp.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain; }
-  .widgets__link--telegram {
-    background-image: url("../img/telegram.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain; }
-  .widgets__link--viber {
-    background-image: url("../img/viber.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain; }
-  .widgets__link:hover {
-    box-shadow: 1px 1px 5px 3px gray; }
