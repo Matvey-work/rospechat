@@ -41,9 +41,10 @@
 .how-work__item {
   background-color: #fff;
   width: 269px;
-  height: 197px;
+  height: 200px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (max-width: 1280px) {
     margin-bottom: 20px;
@@ -57,6 +58,36 @@
   @media (max-width: 1023px) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    color: #CB000D;
+    bottom: 10px;
+    right: 10px;
+    width: 27px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:first-child::before {
+    content: "' 01";
+  }
+
+  &:nth-child(2)::before {
+    content: "' 02";
+  }
+
+  &:nth-child(3)::before {
+    content: "' 03";
+  }
+
+  &:last-child::before {
+    content: "' 04";
   }
 }
 
@@ -106,4 +137,5 @@
   color: #04151F;
   margin-left: 20px;
   width: 239px;
+  margin-top: 5px;
 }

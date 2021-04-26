@@ -261,6 +261,37 @@
       </div>
     </footer>
 
+    <div class="bid hidden">
+      <div class="bid__block">
+        <h2 class="bid__title">Оставить заявку</h2>
+        <form action="/" method="post" class="bid__form">
+          <div class="bid__form-top">
+            <label for="name">
+              <input class="bid__input" id="name" type="text" placeholder="Имя*" required>
+            </label>
+            <label for="tel">
+              <input class="bid__input" id="tel" type="tel" placeholder="Телефон*" required>
+            </label>
+            <button type="submit" class="bid__submit">Оставить заявку</button>
+          </div>
+          <input type="checkbox" name="conf" id="conf" class="visually-hidden">
+          <label for="conf" class="bid__label-conf">Согласен на обработку персональных данных</label>
+        </form>
+        <div class="bid__close-btn"></div>
+      </div>
+    </div>
+
+    <div class="bid bid__thanks hidden">
+      <div class="bid__block">
+        <div class="bid__check"></div>
+        <h2 class="bid__title bid__title--thanks">Спасибо!</h2>
+        <p class="bid__thanks-text">
+          Ваша заявка успешно отправлена
+        </p>
+        <div class="bid__close-btn"></div>
+      </div>
+    </div>
+
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.min.js"></script>

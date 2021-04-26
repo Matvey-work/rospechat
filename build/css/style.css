@@ -2159,10 +2159,12 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   width: 863px;
   height: 318px;
   margin-left: auto;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-top: 100px; }
   @media (max-width: 1023px) {
     .about-company__block {
       margin: 0 auto;
+      margin-top: 100px;
       width: 100%; } }
   @media (max-width: 600px) {
     .about-company__block {
@@ -2899,9 +2901,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .how-work__item {
   background-color: #fff;
   width: 269px;
-  height: 197px;
+  height: 200px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   @media (max-width: 1280px) {
     .how-work__item {
       margin-bottom: 20px; }
@@ -2912,6 +2915,26 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     .how-work__item {
       margin-left: auto;
       margin-right: auto; } }
+  .how-work__item::before {
+    position: absolute;
+    content: "";
+    color: #CB000D;
+    bottom: 10px;
+    right: 10px;
+    width: 27px;
+    height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px; }
+  .how-work__item:first-child::before {
+    content: "' 01"; }
+  .how-work__item:nth-child(2)::before {
+    content: "' 02"; }
+  .how-work__item:nth-child(3)::before {
+    content: "' 03"; }
+  .how-work__item:last-child::before {
+    content: "' 04"; }
 
 .how-work__block-text-top {
   font-style: normal;
@@ -2947,7 +2970,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   line-height: 24px;
   color: #04151F;
   margin-left: 20px;
-  width: 239px; }
+  width: 239px;
+  margin-top: 5px; }
 
 .delivery-rus {
   font-family: "Futura PT";
@@ -3228,6 +3252,13 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 300px;
   border-radius: 5px;
   position: relative; }
+  @media (max-width: 800px) {
+    .bid__block {
+      width: 708px;
+      height: 350px; } }
+  @media (max-width: 600px) {
+    .bid__block {
+      width: 300px; } }
 
 .bid__title {
   font-style: normal;
@@ -3237,11 +3268,25 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   text-align: center;
   color: #432534;
   padding-top: 50px; }
+  @media (max-width: 800px) {
+    .bid__title {
+      padding-top: 30px;
+      margin-top: 0;
+      margin-bottom: 0; } }
+  @media (max-width: 600px) {
+    .bid__title {
+      padding-top: 40px;
+      font-size: 32px;
+      line-height: 34px; } }
   .bid__title--thanks {
     padding-top: 100px; }
 
 .bid__form-top {
   margin-bottom: 25px; }
+  @media (max-width: 800px) {
+    .bid__form-top {
+      display: flex;
+      flex-direction: column; } }
 
 .bid__input:first-child {
   margin-right: 20px; }
@@ -3262,6 +3307,15 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 56px;
   border-radius: 5px;
   box-sizing: border-box; }
+  @media (max-width: 800px) {
+    .bid__input,
+    .bid__submit {
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media (max-width: 800px) {
+  .bid__input {
+    margin-bottom: 10px; } }
 
 .bid__input:invalid {
   border: 1px solid #CB000D; }
@@ -3277,6 +3331,13 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   text-align: center;
   color: #fff;
   cursor: pointer; }
+  @media (max-width: 800px) {
+    .bid__submit {
+      margin-right: auto;
+      margin-left: 33%; } }
+  @media (max-width: 600px) {
+    .bid__submit {
+      margin-left: auto; } }
 
 .bid__label-conf {
   display: flex;
@@ -3291,6 +3352,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   margin-right: auto;
   border-bottom: 1px solid #432534;
   width: fit-content; }
+  @media (max-width: 600px) {
+    .bid__label-conf {
+      border: none; } }
 
 .bid__label-conf::before {
   position: absolute;
@@ -3339,6 +3403,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   line-height: 46px;
   text-align: center;
   color: #04151F; }
+
+.hidden {
+  display: none; }
 
 .container {
   margin-left: auto;

@@ -41,14 +41,36 @@ navToggle.addEventListener('click', function () {
 });
 
 
-// const Keys = {
-//   ESCAPE: 'Escape',
-//   ESC: 'Esc',
-// };
+
+const Keys = {
+  ESCAPE: 'Escape',
+  ESC: 'Esc',
+};
 
 // const templateBid = document.querySelector('#bid').content;
-// const popupBid = templateBid.querySelector('.bid').cloneNode(true);
-// const bidButton = popupBid.querySelector('.bid__close-btn');
+
+
+let popupBid = document.querySelector('.bid');
+
+let bidCloseButton = document.querySelector('.bid__close-btn');
+
+// let btnRequest = document.querySelector('.request');
+// console.log(btnRequest);
+
+// btnRequest.addEventListener('click', (evt) => {
+//   // console.log(123);
+//   evt.preventDefault();
+//   // console.log(123);
+//   popupBid.classList.remove('hidden');
+// });
+
+bidCloseButton.addEventListener('click', (evt) => {
+  popupBid.classList.add('hidden');
+});
+
+$(document).on('click', 'a.request', function () {
+  popupBid.classList.remove('hidden');
+});
 
 // const closePopup = (popup, button) => {
 //   document.addEventListener('click', () => {
@@ -68,9 +90,15 @@ navToggle.addEventListener('click', function () {
 //   }
 // };
 
+
+
+
+
 // const showBid = () => {
 //   document.body.append(popupBid);
 // };
+
+
 
 
 
