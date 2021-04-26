@@ -641,7 +641,8 @@ template {
   margin-left: 50px; }
   @media (max-width: 1025px) {
     .main-nav {
-      margin-left: 5px; } }
+      margin-left: auto;
+      margin-right: auto; } }
 
 .main-nav__link {
   color: #04151f;
@@ -2437,6 +2438,14 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-size: cover;
   height: 545px;
   position: relative; }
+  @media (max-width: 600px) {
+    .our-contacts {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      background-color: rgba(67, 37, 52, 0.99);
+      background-image: none;
+      padding-bottom: 20px; } }
 
 .popular-questions--contacts {
   margin-top: 0; }
@@ -2449,6 +2458,12 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 100%;
   background-color: rgba(67, 37, 52, 0.89);
   z-index: 2501; }
+  @media (max-width: 1023px) {
+    .our-contacts__block-left {
+      width: 49%; } }
+  @media (max-width: 600px) {
+    .our-contacts__block-left {
+      display: none; } }
 
 .our-contacts__adress {
   position: absolute;
@@ -2456,6 +2471,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   flex-direction: column;
   top: 5%;
   z-index: 2502; }
+  @media (max-width: 600px) {
+    .our-contacts__adress {
+      position: static; } }
 
 .our-contacts__title {
   color: #f6f6f6;
@@ -2463,6 +2481,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-weight: 600;
   font-size: 50px;
   line-height: 52px; }
+  @media (max-width: 1023px) {
+    .our-contacts__title {
+      font-size: 36px;
+      line-height: 40px; } }
 
 .our-contacts__adress-top,
 .our-contacts__adress-bottom {
@@ -2473,9 +2495,18 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     font-weight: 600;
     font-size: 26px;
     line-height: 26px; }
+    @media (max-width: 1023px) {
+      .our-contacts__adress-top h3,
+      .our-contacts__adress-bottom h3 {
+        font-size: 22px;
+        line-height: 24px; } }
 
 .block-contacts {
   margin-left: -10px; }
+  @media (max-width: 600px) {
+    .block-contacts {
+      display: flex;
+      flex-direction: column; } }
   .block-contacts p {
     position: relative;
     margin-top: 20px;
@@ -2499,6 +2530,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     line-height: 24px;
     margin-left: 40px;
     position: relative; }
+    @media (max-width: 1023px) {
+      .block-contacts a {
+        font-size: 16px;
+        line-height: 17px; } }
     .block-contacts a::before {
       position: absolute;
       content: "";
@@ -2508,6 +2543,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
       left: -30px;
       background-position: 50% 50%;
       background-repeat: no-repeat; }
+  @media (max-width: 600px) {
+    .block-contacts .our-contacts__mail {
+      margin-bottom: 20px; } }
   .block-contacts .our-contacts__mail::before {
     background-image: url("../img/e-mail-gold.svg"); }
   .block-contacts .our-contacts__tel::before {
