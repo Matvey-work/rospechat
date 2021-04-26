@@ -40,6 +40,25 @@
   &--delivery {
     background-color: #183a37;
     height: 132px;
+    top: 36%;
+
+    @media (max-width: 1280px) {
+      top: 0;
+      height: 100px;
+
+      & .about-company__title {
+        right: -50px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      height: 60px;
+
+      & .about-company__title {
+        top: -5px;
+        right: -30px;
+      }
+    }
   }
 }
 
@@ -121,6 +140,12 @@
     background-color: #432534;
     height: 245px;
     padding-bottom: 5px;
+
+    margin-top: 100px;
+
+    @media (max-width: 600px) {
+      height: fit-content;
+    }
   }
 }
 
