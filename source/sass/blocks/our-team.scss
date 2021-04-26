@@ -38,6 +38,14 @@
   }
 }
 
+.our-team__item {
+  @media (max-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 .our-team__name {
   color: #04151F;
   font-style: normal;

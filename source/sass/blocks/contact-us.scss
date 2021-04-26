@@ -5,6 +5,10 @@
   padding-top: 100px;
   // padding-bottom: 100px;
   position: relative;
+
+  @media (max-width: 600px) {
+    padding-top: 25px;
+  }
 }
 
 .contact-us__title {
@@ -13,6 +17,20 @@
   font-weight: 600;
   font-size: 50px;
   line-height: 52px;
+
+  @media (max-width: 1280px) {
+    width: 500px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 280px;
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 
 .contact-us__sub-title {
@@ -22,6 +40,20 @@
   line-height: 26px;
   color: #FFFFFF;
   width: 735px;
+
+  @media (max-width: 1280px) {
+    width: 500px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 400px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 280px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .contact-us__form {
@@ -31,6 +63,16 @@
 
 .contact-us__form-input {
   margin-bottom: 24px;
+
+  @media (max-width: 600px) {
+    // max-width: 280px;
+    // font-size: 24px;
+    // line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }
 
 .form-name-input,
@@ -41,14 +83,30 @@
   width: 220px;
   height: 56px;
   border-radius: 5px;
+
+  @media (max-width: 1000px) {
+    width: 140px;
+    height: 36px;
+  }
+
+  @media (max-width: 600px) {
+    width: 250px;
+  }
 }
 
 .form-tel-input {
   margin-left: 15px;
+
+  @media (max-width: 600px) {
+    margin: auto;
+  }
 }
 
 .form-name-input,
 .form-tel-input {
+  @media (max-width: 600px) {
+    margin-bottom: 10px;
+  }
   &::placeholder {
     padding-left: 17px;
     font-style: normal;
@@ -70,6 +128,15 @@
   text-align: center;
   color: #04151F;
   cursor: pointer;
+
+  @media (max-width: 1000px) {
+    height: 38px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    margin: auto;
+  }
 }
 
 .contact-us__confirm {
@@ -113,6 +180,18 @@ input[type="checkbox"]:checked+.contact-us__confirm::after {
   top: 0;
   right: 0;
 
+  @media (max-width: 1600px) {
+    width: 26%;
+  }
+
+  @media (max-width: 1000px) {
+    width: 33%;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -123,6 +202,20 @@ input[type="checkbox"]:checked+.contact-us__confirm::after {
     background-image: url("../img/tipograff.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1600px) {
+      width: 245px;
+      right: 20%;
+    }
+
+    @media (max-width: 1280px) {
+      width: 190px;
+    }
+
+    @media (max-width: 1000px) {
+      right: 15%;
+    }
   }
 
   &::after {
@@ -135,5 +228,19 @@ input[type="checkbox"]:checked+.contact-us__confirm::after {
     background-image: url("../img/contact-us-print.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1600px) {
+      width: 245px;
+      right: 18%;
+    }
+
+    @media (max-width: 1280px) {
+      width: 180px;
+    }
+
+    @media (max-width: 1000px) {
+      top: 40%;
+    }
   }
 }

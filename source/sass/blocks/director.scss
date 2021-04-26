@@ -2,13 +2,33 @@
   font-family: "Futura PT";
   display: flex;
   min-height: 703px;
-  background-image: linear-gradient(90deg, #183A37 0%, #183A37 42%, #fff 42%, #fff 100%);
+  background-image: linear-gradient(90deg, #183A37 0%, #183A37 40%, #fff 40%, #fff 100%);
   padding-bottom: 22px;
+
+  @media (max-width: 1600px) {
+    background-image: linear-gradient(90deg, #183A37 0%, #183A37 36%, #fff 36%, #fff 100%);
+    min-height: 503px;
+  }
+
+  @media (max-width: 1200px) {
+    background-image: linear-gradient(90deg, #183A37 0%, #183A37 31%, #fff 31%, #fff 100%);
+    min-height: 503px;
+  }
+
+  @media (max-width: 1023px) {
+    background-image: none;
+  }
 }
 
 .director__container {
   display: flex;
   // justify-content: space-between;
+
+  @media (max-width: 600px) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
 }
 
 .director__block-left {
@@ -23,6 +43,15 @@
   line-height: 24px;
   margin-left: 180px;
 
+  @media (max-width: 1280px) {
+    margin-left: 0;
+    margin-right: 140px;
+  }
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -33,12 +62,35 @@
     background-image: url("../img/director-img.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1280px) {
+      width: 290px;
+      height: 430px;
+      top: -50px;
+      right: auto;
+      left: -10px;
+    }
+
+    @media (max-width: 1600px) {
+      width: 290px;
+      height: 430px;
+      top: -50px;
+      right: auto;
+      left: -10px;
+    }
+
+
   }
 }
 
 .director__name {
   font-weight: 600;
   margin-bottom: 3px;
+
+  @media (max-width: 1280px) {
+
+  }
 }
 
 .director__sub-title {
@@ -56,17 +108,33 @@
   font-style: normal;
 
 
+  @media (max-width: 1023px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   & p {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 }
 
 .director__word {
   font-weight: 600;
   font-size: 50px;
-  line-height: 52px
+  line-height: 52px;
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 

@@ -8,6 +8,12 @@
   background-size: contain;
   height: 578px;
 
+  @media (max-width: 600px) {
+    background-image: none;
+    height: 400px;
+
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -18,6 +24,10 @@
     background-image: url("../img/group-point.svg");
     background-position: 50% 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1800px) {
+      display: none;
+    }
   }
 }
 
@@ -28,8 +38,17 @@
   width: 525px;
   height: 265px;
   padding-left: 35px;
+
+  @media (max-width: 600px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .copy-drawing__text.drawing__text {
   width: 500px;
+
+  @media (max-width: 600px) {
+    width: 260px;
+  }
 }

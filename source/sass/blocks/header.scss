@@ -6,6 +6,17 @@
   height: 56px;
   margin-top: 21px;
   margin-bottom: 21px;
+  position: relative;
+
+  @media (max-width: 1280px) {
+    min-height: 96px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    min-height: 60px;
+  }
 
   & .request {
     display: flex;
@@ -17,8 +28,128 @@
     color: #fff;
     background-color: #183A37;
     text-decoration: none;
+
+    @media (max-width: 1280px) {
+      height: 46px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    &--mobile {
+      @media (min-width: 601px) {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
+        margin-top: 40px;
+      }
+    }
   }
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  border: none;
+  width: 65px;
+  height: 65px;
+  background: none;
+  cursor: pointer;
+
+  @media (min-width: 601px) {
+    display: none;
+  }
+}
+
+.header__main-nav {
+  display: flex;
+  flex-direction: column;
+
+  &--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 24px;
+    height: 1.5px;
+    background-color: black;
+    box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+
+    @media (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  &--closed .main-nav__list {
+    @media (max-width: 601px) {
+      display: none;
+    }
+  }
+
+  &--opened .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 90vw;
+    height: 60vh;
+    background-color: #fff;
+    z-index: 9999;
+  }
+
+  &--opened .main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 65px;
+    height: 65px;
+    background: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25px;
+      height: 2px;
+      background-color: black;
+      cursor: pointer;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @media (min-width: 760px) {
+      display: none;
+    }
+  }
+
+  // @media (max-width: 600px) {
+  //   &--nojs .main-nav__toggle {
+  //     display: none;
+  //   }
+
+  //   &--nojs .main-nav__list {
+  //     display: flex;
+  //   }
+  // }
+}
+
 
 
 

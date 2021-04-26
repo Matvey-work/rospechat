@@ -2,6 +2,10 @@
   font-family: "Futura PT";
   background-color: #F6F6F6;
   min-height: 670px;
+
+  @media (max-width: 600px) {
+    min-height: 400px;
+  }
 }
 
 .express-print__container {
@@ -9,33 +13,56 @@
   justify-content: space-between;
 }
 
-// .express-print__block-left {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   color: #432534;
-//   font-style: normal;
-//   width: 670px;
+.express-print__block-left {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // font-style: normal;
+  // width: 670px;
+  @media (max-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-// }
+}
 
 .express-print__title {
   font-weight: 600;
   font-size: 80px;
   line-height: 60px;
+  color: #432534;
 
+  @media (max-width: 600px) {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
 }
 
 .express-print__sub-title {
   font-weight: 600;
   font-size: 58px;
   line-height: 70px;
+  color: #432534;
+
+  @media (max-width: 600px) {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
 }
 
 .express-print__text {
   font-weight: 450;
   font-size: 35px;
   line-height: 45px;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .express-print__get-price {
@@ -52,6 +79,11 @@
   width: 210px;
   height: 54px;
   border-radius: 5px;
+
+  @media (max-width: 600px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // .express-print__block-right {

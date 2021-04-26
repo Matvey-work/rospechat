@@ -1,5 +1,9 @@
 .contacts-links {
-  margin-right: 27px;
+  margin-right: 2px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 
 }
 
@@ -9,7 +13,7 @@
   font-size: 18px;
   line-height: 23px;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 37px;
 
   &::before {
     position: absolute;
@@ -31,7 +35,7 @@
 }
 
 .contacts-link--mail {
-  margin-right: 18px;
+  // margin-right: 18px;
 
   &::before {
     background-image: url("../img/e-mail.svg");
@@ -40,6 +44,15 @@
 
 .contacts-link--adress {
   margin-left: 40px;
+
+  @media (max-width: 1280px) {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 
   &::before {
     background-image: url("../img/adress.svg");

@@ -27,6 +27,20 @@ $(document).ready(function(){
   });
 });
 
+let navMain = document.querySelector('.header__main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('header__main-nav--closed')) {
+    navMain.classList.remove('header__main-nav--closed');
+    navMain.classList.add('header__main-nav--opened');
+  } else {
+    navMain.classList.add('header__main-nav--closed');
+    navMain.classList.remove('header__main-nav--opened');
+  }
+});
+
+
 // const Keys = {
 //   ESCAPE: 'Escape',
 //   ESC: 'Esc',

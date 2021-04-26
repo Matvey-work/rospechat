@@ -17,6 +17,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 1000px) {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .delivery__item {
@@ -25,6 +31,11 @@
   background-color: #f6f6f6;
   margin-bottom: 30px;
   position: relative;
+
+  @media (max-width: 1000px) {
+    margin-right: auto;
+    margin-right: auto;
+  }
 
   &::before {
     position: absolute;

@@ -8,8 +8,13 @@
   // padding: 0 10px;
 
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 100px;
+
+  // @media (max-width: 1023px) {
+  //   max-width: 900px;
+  // }
 
 }
 
@@ -63,7 +68,7 @@ div.slick-slide div.slider-img img{
   background-size: contain;
 
   @media (min-width: 320px) {
-
+    display: none;
   }
 
   @media (min-width: 768px) {

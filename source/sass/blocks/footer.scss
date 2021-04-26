@@ -1,5 +1,9 @@
 .main-footer {
   font-family: "Futura PT";
+
+  @media (max-width: 1280px) {
+    padding-top: 10px;
+  }
 }
 
 .main-footer__container {
@@ -7,11 +11,23 @@
   align-items: center;
   // justify-content: space-between;
   height: 105px;
+
+  @media (max-width: 1280px) {
+    flex-wrap: wrap;
+  }
 }
 
-// .footer__main-nav {
-//   margin-left: 200px;
-// }
+.footer__main-nav {
+  @media (max-width: 1280px) {
+    margin-left: 100px;
+    // margin-bottom: 10px;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+}
 
 .footer__contacts-links {
   display: flex;
@@ -19,6 +35,14 @@
   color: #04151f;
   margin-right: 0;
   margin-left: auto;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .block-info {
@@ -32,11 +56,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 }
 
 .copiright {
   display: flex;
   color: #fff;
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
+    max-width: 40%;
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    // justify-content: space-between;
+    min-width: 280px;
+    margin-bottom: 10px;
+  }
 
   & p a {
     color: #fff;
@@ -47,9 +88,22 @@
 
   & p {
     margin-right: 10px;
+
+    @media (max-width: 600px) {
+      margin: 5px;
+    }
   }
 }
 
 .security-policy {
   color: #fff;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.main-footer__container .logo-link {
+  margin-left: auto;
+  margin-right: auto;
 }
