@@ -2559,6 +2559,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-size: cover;
   height: 541px;
   position: relative; }
+  @media (max-width: 600px) {
+    .service-cost {
+      height: fit-content; } }
 
 .service-cost__block-left {
   position: absolute;
@@ -2566,6 +2569,19 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-color: #183A37;
   width: 35%;
   z-index: 3; }
+  @media (max-width: 1600px) {
+    .service-cost__block-left {
+      width: 30%; } }
+  @media (max-width: 1280px) {
+    .service-cost__block-left {
+      top: 0;
+      width: 50%; } }
+  @media (max-width: 1023px) {
+    .service-cost__block-left {
+      height: 60px; } }
+  @media (max-width: 600px) {
+    .service-cost__block-left {
+      width: 90%; } }
 
 .service-cost__title {
   color: #EFD6AC;
@@ -2576,6 +2592,21 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   width: 240px;
   margin-left: auto;
   margin-right: 5%; }
+  @media (max-width: 1280px) {
+    .service-cost__title {
+      width: 50%;
+      font-size: 32px;
+      line-height: 34px; } }
+  @media (max-width: 1023px) {
+    .service-cost__title {
+      width: 80%;
+      font-size: 32px;
+      line-height: 34px;
+      margin-top: 10px;
+      margin-right: 2%; } }
+  @media (max-width: 600px) {
+    .service-cost__title {
+      width: 95%; } }
 
 .service-cost__container {
   display: flex;
@@ -2592,6 +2623,12 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   padding-bottom: 55px;
   margin-left: auto;
   margin-right: 0; }
+  @media (max-width: 600px) {
+    .service-cost__block-text {
+      padding-left: 13px;
+      padding-right: 13px;
+      margin: 0 auto;
+      width: 95%; } }
 
 .service-cost__text {
   color: #fff;
@@ -2603,6 +2640,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .types-service {
   font-family: "Futura PT";
   margin-top: 100px; }
+  @media (max-width: 600px) {
+    .types-service {
+      margin-top: 40px; } }
 
 .types-service__title {
   color: #432534;
@@ -2611,10 +2651,17 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-size: 50px;
   line-height: 52px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .types-service__title {
+      font-size: 32px;
+      line-height: 34px; } }
 
 .types-service__list-btn {
   display: flex;
   width: 100%; }
+  @media (max-width: 1023px) {
+    .types-service__list-btn {
+      overflow-x: scroll; } }
 
 .types-service__btn {
   border: 1px solid #EFD6AC;
@@ -2631,6 +2678,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px; }
+    @media (max-width: 1280px) {
+      .types-service__btn--dop {
+        padding-left: 12px;
+        padding-right: 12px; } }
 
 .types-service__btn--active {
   background-color: #EFD6AC; }
@@ -2652,20 +2703,38 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     font-weight: 450;
     font-size: 22px;
     line-height: 25px; }
+    @media (max-width: 600px) {
+      .types-service__item table th {
+        font-size: 15px;
+        line-height: 17px; } }
   .types-service__item table th:first-child {
     text-align: start;
     padding-left: 20px; }
+    @media (max-width: 600px) {
+      .types-service__item table th:first-child {
+        padding-left: 5px; } }
   .types-service__item table td {
     color: #04151F;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 25px; }
+    @media (max-width: 600px) {
+      .types-service__item table td {
+        font-size: 18px;
+        line-height: 20px; } }
   .types-service__item table td:first-child {
     text-align: start;
     padding-left: 20px; }
+    @media (max-width: 600px) {
+      .types-service__item table td:first-child {
+        padding-left: 5px; } }
   .types-service__item table td:nth-child(2), .types-service__item table td:nth-child(3) {
     text-align: center; }
+
+@media (max-width: 1023px) {
+  .types-service__item {
+    overflow-x: scroll; } }
 
 .types-service__get-price {
   display: flex;
@@ -2703,17 +2772,38 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-position: right 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 617px; }
+  min-height: 617px; }
+  @media (max-width: 1600px) {
+    .drawing-section {
+      background-size: 50%; } }
+  @media (max-width: 600px) {
+    .drawing-section {
+      padding-bottom: 20px; } }
   .drawing-section--copy {
     background-image: url("../img/services-img4.jpg"); }
+    @media (max-width: 1280px) {
+      .drawing-section--copy {
+        background-image: none; } }
   .drawing-section--print {
     background-image: url("../img/express-print-img.jpg"); }
+    @media (max-width: 1280px) {
+      .drawing-section--print {
+        background-image: none; } }
   .drawing-section--scan {
     background-image: url("../img/scan-img-2.jpg"); }
+    @media (max-width: 1280px) {
+      .drawing-section--scan {
+        background-image: none; } }
   .drawing-section--folding {
     background-image: url("../img/folding-img-1.jpg"); }
+    @media (max-width: 1280px) {
+      .drawing-section--folding {
+        background-image: none; } }
   .drawing-section--stitching {
     background-image: url("../img/stitching-img-1.jpg"); }
+    @media (max-width: 1280px) {
+      .drawing-section--stitching {
+        background-image: none; } }
   .drawing-section p {
     width: 598px;
     color: #fff;
@@ -2721,6 +2811,15 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px; }
+    @media (max-width: 1600px) {
+      .drawing-section p {
+        width: 440px; } }
+    @media (max-width: 1280px) {
+      .drawing-section p {
+        width: 95%; } }
+    @media (max-width: 600px) {
+      .drawing-section p {
+        width: 95%; } }
 
 .drawing-section__title {
   margin-top: 100px;
@@ -2729,6 +2828,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-size: 50px;
   line-height: 52px;
   color: #EFD6AC; }
+  @media (max-width: 600px) {
+    .drawing-section__title {
+      font-size: 32px;
+      line-height: 34px; } }
 
 .drawing-section__btn {
   display: flex;
@@ -2746,6 +2849,9 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   background-color: #EFD6AC;
   position: relative;
   margin-top: 45px; }
+  @media (max-width: 1600px) {
+    .drawing-section__btn {
+      margin-top: 25px; } }
   .drawing-section__btn::before {
     position: absolute;
     content: "";
@@ -2760,8 +2866,11 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .how-work {
   font-family: "Futura PT";
   background-color: #f6f6f6;
-  height: 580px;
+  min-height: 580px;
   padding-bottom: 50px; }
+  @media (max-width: 1280px) {
+    .how-work {
+      min-height: 700px; } }
 
 .how-work__title {
   color: #432534;
@@ -2782,6 +2891,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .how-work__block {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1280px) {
+    .how-work__block {
+      flex-wrap: wrap;
+      height: 100%; } }
 
 .how-work__item {
   background-color: #fff;
@@ -2789,6 +2902,16 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 197px;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1280px) {
+    .how-work__item {
+      margin-bottom: 20px; }
+      .how-work__item:last-child {
+        margin-left: auto;
+        margin-right: auto; } }
+  @media (max-width: 1023px) {
+    .how-work__item {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .how-work__block-text-top {
   font-style: normal;
