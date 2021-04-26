@@ -8,6 +8,10 @@
   position: relative;
   z-index: 0;
 
+  @media (max-width: 600px) {
+    height: max-content;
+  }
+
   &--delivery {
     height: 445px;
     background-image: url("../img/delivery-banner.jpg");
@@ -23,6 +27,16 @@
   background-color: #432534;
   z-index: 1;
 
+  @media (max-width: 1600px) {
+    width: 28%;
+  }
+
+  @media (max-width: 1280px) {
+    top: 20px;
+    width: 50%;
+    height: 80px;
+  }
+
   &--delivery {
     background-color: #183a37;
     height: 132px;
@@ -34,7 +48,7 @@
   // z-index: 2;
   display: flex;
   align-items: center;
-  height: 100%;
+  // height: 100%;
 }
 
 .about-company__title {
@@ -47,6 +61,27 @@
   width: 222px;
   right: 5%;
   // z-index: 2;
+
+  @media (max-width: 1600px) {
+    right: 15%;
+  }
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    right: -35px;
+    top: -30px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 35px;
+    line-height: 38px;
+    top: -10px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .about-company__block {
@@ -57,12 +92,29 @@
   margin-left: auto;
   margin-right: 0;
 
+  @media (max-width: 1023px) {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    margin-top: 40%;
+    height: 100%;
+  }
+
   & p {
     color: #fff;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
   }
 
   &--delivery {
