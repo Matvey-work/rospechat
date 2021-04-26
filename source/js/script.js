@@ -54,6 +54,11 @@ let popupBid = document.querySelector('.bid');
 
 let bidCloseButton = document.querySelector('.bid__close-btn');
 
+let questions_list = document.querySelectorAll('.popular-questions__item');
+
+let questionsClick = document.querySelector('.popular-questions__item-hidden');
+
+
 // let btnRequest = document.querySelector('.request');
 // console.log(btnRequest);
 
@@ -71,6 +76,23 @@ bidCloseButton.addEventListener('click', (evt) => {
 $(document).on('click', 'a.request', function () {
   popupBid.classList.remove('hidden');
 });
+
+$(document).on('click', '.popular-questions__item', function () {
+  questionsClick.classList.toggle('hidden');
+});
+
+// $(".popular-questions__item").on("click",(function()
+// {
+//   if($('.popular-questions__item-hidden').hasClass("hidden"))
+// $(this).removeClass("hidden");
+// else{
+//   for(var a=0;a<questions_list.length;a++)
+//   questions_list[a].classList.remove("hidden");
+//   $(this).addClass("hidden")}
+// })
+//   );
+
+
 
 // const closePopup = (popup, button) => {
 //   document.addEventListener('click', () => {

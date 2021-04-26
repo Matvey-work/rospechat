@@ -2398,7 +2398,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   position: relative;
   margin-bottom: 8px; }
   .popular-questions__item-hidden {
-    display: none;
+    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
