@@ -74,11 +74,11 @@ let questionsClick = document.querySelector('.popular-questions__item-hidden');
 // });
 
 $(bidCloseButton).on('click', () => {
-  popupBid.addClass('hidden');
+  $('.bid').addClass('hidden');
 });
 
 $(document).on('click', 'a.request', function () {
-  popupBid.removeClass('hidden');
+  $(popupBid).removeClass('hidden');
 });
 
 $(document).on("click",'.popular-questions__item',(function() {
