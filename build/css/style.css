@@ -567,7 +567,7 @@ template {
     @media (max-width: 600px) {
       .header .request--mobile {
         display: flex;
-        margin-top: 40px; } }
+        margin-top: 25px; } }
 
 .main-nav__toggle {
   position: absolute;
@@ -2422,7 +2422,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     @media (max-width: 600px) {
       .popular-questions__item span {
         font-size: 16px;
-        line-height: 18px; } }
+        line-height: 18px;
+        max-width: 70%; } }
   .popular-questions__item::before {
     position: absolute;
     content: "";
