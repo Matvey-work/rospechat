@@ -34,9 +34,9 @@
             Наше предприятие располагает обширной производственной базой, осуществляет эффективную реализацию проектов любой сложности. В работу принимаются заявки, связанные с распечаткой, копированием и сканированием чертежей, а также смежной документации.
           </p>
           <div class="our-production__slider">
-            <div><img src="./img/our-production-img-slider.jpg" alt=""></div>
-            <div><img src="./img/our-production-img-slider.jpg" alt=""></div>
-            <div><img src="./img/our-production-img-slider.jpg" alt=""></div>
+            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
+            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
+            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
           </div>
         </div>
         <div class="our-poduction__block-bottom-right">

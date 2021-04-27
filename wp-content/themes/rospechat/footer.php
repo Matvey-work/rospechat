@@ -79,7 +79,7 @@
             <p>Разработка сайта <a href="">German Web</a></p>
           </div>
 
-          <a href="privacy.html" class="security-policy">
+          <a href="rospechat/politika-konfidenczialnosti/" class="security-policy">
             Политика обработки персональных данных
           </a>
 

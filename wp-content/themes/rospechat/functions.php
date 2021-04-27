@@ -6,7 +6,7 @@
 function all_scripts() {
 
     wp_enqueue_style('slick-css', get_template_directory_uri().'/assets/css/slick.css');
-    wp_enqueue_style('main-css', get_template_directory_uri().'/assets/css/style.min.css');
+    wp_enqueue_style('main-css', get_template_directory_uri().'/assets/css/style.css');
 
     wp_enqueue_script('jquery-script', get_template_directory_uri() . '/assets/js/jquery.js', [], false, true);
     wp_enqueue_script('slick-script', get_template_directory_uri() . '/assets/js/slick.js', [], false, true);
