@@ -54,8 +54,6 @@ let popupBid = document.querySelector('.bid');
 
 let bidCloseButton = document.querySelector('.bid__close-btn');
 
-let questions_list = document.querySelectorAll('.popular-questions__item');
-
 let questionsClick = document.querySelector('.popular-questions__item-hidden');
 
 
@@ -69,7 +67,7 @@ let questionsClick = document.querySelector('.popular-questions__item-hidden');
 //   popupBid.classList.remove('hidden');
 // });
 
-bidCloseButton.addEventListener('click', (evt) => {
+bidCloseButton.addEventListener('click', () => {
   popupBid.classList.add('hidden');
 });
 
@@ -77,62 +75,14 @@ $(document).on('click', 'a.request', function () {
   popupBid.classList.remove('hidden');
 });
 
-$(document).on('click', '.popular-questions__item', function () {
-  questionsClick.classList.toggle('hidden');
-});
+$(document).on("click",'.popular-questions__item',(function() {
 
-// $(".popular-questions__item").on("click",(function()
-// {
-//   if($('.popular-questions__item-hidden').hasClass("hidden"))
-// $(this).removeClass("hidden");
-// else{
-//   for(var a=0;a<questions_list.length;a++)
-//   questions_list[a].classList.remove("hidden");
-//   $(this).addClass("hidden")}
-// })
-//   );
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active').next().slideUp();
+  } else {
+    $('.popular-questions__item').removeClass('active');
+    $('.popular-questions__item-hidden').slideUp();
+    $(this).addClass('active').next().slideDown();
+  }
+}));
 
-
-
-// const closePopup = (popup, button) => {
-//   document.addEventListener('click', () => {
-//     popup.remove();
-//   }, {once: true});
-
-//   document.addEventListener('keydown', (evt) => {
-//     if (evt.key === Keys.ESCAPE || evt.key === Keys.ESC) {
-//       popup.remove();
-//     }
-//   }, {once: true});
-
-//   if (button) {
-//     button.addEventListener('click', () => {
-//       popup.remove();
-//     }, {once: true});
-//   }
-// };
-
-
-
-
-
-// const showBid = () => {
-//   document.body.append(popupBid);
-// };
-
-
-
-
-
-// let navMain = document.querySelector('.main-nav');
-// let navToggle = document.querySelector('.main-nav-toggle');
-
-// navToggle.addEventListener('click', function () {
-//   if (navMain.classList.contains('main-nav--closed')) {
-//     navMain.classList.remove('main-nav--closed');
-//     navMain.classList.add('main-nav--opened');
-//   } else {
-//     navMain.classList.add('main-nav--closed');
-//     navMain.classList.remove('main-nav--opened');
-//   }
-// });
