@@ -106,3 +106,12 @@
     background-image: url("../img/minus-red.svg");
   }
 }
+
+.item-table {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+

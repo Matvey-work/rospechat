@@ -86,3 +86,14 @@ $(document).on("click",'.popular-questions__item',(function() {
   }
 }));
 
+$(document).on('click', '.types-service__btn', function() {
+  let index = $(this).index();
+  // console.log(index);
+  $('.types-service__btn').removeClass('types-service__btn--active');
+  $(this).addClass('types-service__btn--active');
+
+  $('.item-table').removeClass('visible');
+  $('.item-table').eq(index).addClass('visible');
+  // console.log($('.item-table'));
+})
+

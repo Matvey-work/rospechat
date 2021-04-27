@@ -2439,6 +2439,11 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   .popular-questions__item.active::before {
     background-image: url("../img/minus-red.svg"); }
 
+.item-table {
+  display: none; }
+  .item-table.visible {
+    display: block; }
+
 .our-contacts {
   font-family: "Futura PT";
   background-image: url("../img/map-contacts-img.jpg");
