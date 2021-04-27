@@ -40,6 +40,12 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+// $(navToggle).on('click', function() {
+//   $(navMain).toggleClass('header__main-nav--opened');
+// })
+
+
+
 
 
 const Keys = {
@@ -67,12 +73,12 @@ let questionsClick = document.querySelector('.popular-questions__item-hidden');
 //   popupBid.classList.remove('hidden');
 // });
 
-bidCloseButton.addEventListener('click', () => {
-  popupBid.classList.add('hidden');
+$(bidCloseButton).on('click', () => {
+  popupBid.addClass('hidden');
 });
 
 $(document).on('click', 'a.request', function () {
-  popupBid.classList.remove('hidden');
+  popupBid.removeClass('hidden');
 });
 
 $(document).on("click",'.popular-questions__item',(function() {
