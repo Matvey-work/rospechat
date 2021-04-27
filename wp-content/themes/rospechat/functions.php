@@ -27,3 +27,6 @@ register_nav_menus(array(
   'top' => 'Верхнее меню',
   'bottom' => 'Нижнее меню',
 ));
+
+
+

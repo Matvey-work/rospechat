@@ -546,7 +546,7 @@ template {
   .header .request {
     display: flex;
     width: 165px;
-    height: 100%;
+    height: 46px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -641,7 +641,10 @@ template {
 
 .main-nav {
   font-family: "Futura PT";
-  margin-left: 50px; }
+  margin-left: 50px;
+  padding-left: 0;
+  margin: 0;
+}
   @media (max-width: 1025px) {
     .main-nav {
       margin-left: auto;
@@ -656,6 +659,10 @@ template {
   padding: 10px; }
   .main-nav__link--active {
     color: #CB000D; }
+
+  .current-menu-item a {
+    color: #CB000D;
+  }
 
 .contacts-links {
   margin-right: 2px; }
