@@ -57,17 +57,28 @@
 
         <div class="footer__contacts-links contacts-links">
 
-          <a href="" class="contacts-link contacts-link--mail">
+        <div class="custom">
+
+        <?php
+
+        if ( function_exists('dynamic_sidebar') )
+
+          dynamic_sidebar('widjets-footer');
+
+        ?>
+        </div>
+
+          <!-- <a href="" class="contacts-link contacts-link--mail">
             artur@s-copy.spb.ru
           </a>
           <a href="" class="contacts-link contacts-link--tel">
             8 (812) 309-14-79
-          </a>
+          </a> -->
 
         </div>
-        <a class="contacts-link contacts-link--adress">
+        <!-- <a class="contacts-link contacts-link--adress">
             Черняховского,63/65
-          </a>
+          </a> -->
       </div>
 
       <div class="block-info">

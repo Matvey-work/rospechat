@@ -1,5 +1,5 @@
 <?php
-
+register_sidebar( $args );
 ?>
 
 <!DOCTYPE html>
@@ -31,12 +31,17 @@
 
         <button type="button" class="header__btn main-nav__toggle"></button>
         <div class="header__contacts-links contacts-links">
-          <a href="" class="contacts-link contacts-link--mail">
-            artur@s-copy.spb.ru
-          </a>
-          <a href="" class="contacts-link contacts-link--tel">
-            8 (812) 309-14-79
-          </a>
+        <div class="custom">
+
+        <?php
+
+        if ( function_exists('dynamic_sidebar') )
+
+        dynamic_sidebar('widjets-header');
+
+        ?>
+        </div>
+
         </div>
         <a href="#" class="request">Оставить заявку</a>
       </header>

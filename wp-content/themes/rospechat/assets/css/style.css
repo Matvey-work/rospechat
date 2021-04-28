@@ -3547,6 +3547,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 17px;
 } */
 
+.widget_text.widget-block {
+  list-style: none;
+}
+
 #conf {
   border: none;
   width: 15px;

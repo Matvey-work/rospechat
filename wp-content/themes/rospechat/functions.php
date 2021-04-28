@@ -30,11 +30,36 @@ register_nav_menus(array(
 
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 function my_wp_nav_menu_args( $args='' ){
-  
+
   $args['container'] = '';
 
   return $args;
 }
 
+add_theme_support('widgets');
 
+function header_widgets(){
+	register_sidebar( array(
+		'name' => 'Телефон и почта - шапка',
+		'id' => 'widjets-header',
+		'description' => 'Выводиться в шапке сайта.',
+		'before_widget' => '<li class="widget-block">',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'header_widgets' );
 
+function footer_widgets(){
+	register_sidebar( array(
+		'name' => 'Телефон и почта - подвал',
+		'id' => 'widjets-footer',
+		'description' => 'Выводиться в подвале сайта.',
+		'before_widget' => '<li class="widget-block">',
+		'after_widget' => '</li>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'footer_widgets' );
