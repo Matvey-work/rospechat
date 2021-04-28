@@ -3558,3 +3558,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   margin-top: 5px;
   margin-right: 10px;
 }
+
+.ymaps-2-1-78-controls__control {
+  margin-left: 96vw!important;
+  margin-right: 0;
+}
