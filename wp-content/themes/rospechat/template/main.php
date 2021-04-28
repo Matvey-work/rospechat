@@ -2,8 +2,17 @@
 /**
  * Template Name: Main page
  */
+$custom_fields = get_post_meta($post->ID);
+$arrSlide = [];
 
+for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
+  $img_id = $custom_fields["slider_image_" . $i . "_img"][0];
+  $arrSlide[] = wp_get_attachment_url($img_id);
+}
+// echo "<pre>",var_dump($arrSLide),"</pre>";
 ?>
+
+
 
 <?php get_header(); ?>
 
@@ -173,17 +182,15 @@
       </section>
       <section class="production">
         <!-- <div class="container"> -->
-          <h2 class="production__title">Немного производственного процесса</h2>
+          <h2 class="production__title"><?= current($custom_fields["slider_title"]) ?></h2>
+
           <div class="production__slider-container sliders">
 
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto3.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto2.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
-            <div class="slider-img"><img src="<?= get_template_directory_uri() ?>/assets/img/slider-foto1.jpg" alt=""></div>
+          <?php foreach($arrSlide as $link): ?>
+            <div class="slider-img">
+              <img src="<?= $link ?>" alt="">
+            </div>
+          <?php endforeach ?>
 
           </div>
         <!-- </div> -->
