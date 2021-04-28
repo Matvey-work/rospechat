@@ -2,6 +2,8 @@
 /**
  * Template Name: Price page
  */
+
+
 ?>
 
 <?php get_header(); ?>

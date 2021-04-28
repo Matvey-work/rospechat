@@ -1,9 +1,14 @@
-<section class="contact-us">
+<?php
+ $pageId = get_the_ID();
+ if($pageId != "22") { ?>
+
+  <section class="contact-us">
         <div class="container">
           <h2 class="contact-us__title">Остались вопросы? Свяжитесь с нами!</h2>
           <p class="contact-us__sub-title">
             Оставьте свои контакты и получите максимально выгодное предложение по выполнению работ.
           </p>
+
           <form class="contact-us__form" action="/" method="post">
             <div class="contact-us__form-input">
               <label for="name" class="form-name">
@@ -22,10 +27,15 @@
           </form>
         </div>
         <div class="contact-us__block-right">
-          <!-- <h2 class="contact-us__block-right-title"></h2>
-          <span class="contact-us__block-right-sub-title"></span> -->
+
         </div>
-      </section>
+</section>
+
+<?php
+}
+?>
+
+
 
     </main>
 
@@ -37,25 +47,6 @@
           <img src="<?= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
         </a>
 
-        <!-- <nav class="footer__main-nav main-nav">
-          <a href="services.html" class="main-nav__link main-nav__link--services">
-            Услуги
-          </a>
-          <a href="about-us.html" class="main-nav__link main-nav__link--about-us">
-            О нас
-          </a>
-          <a href="price.html" class="main-nav__link main-nav__link--price">
-            Цены
-          </a>
-          <a href="delivery.html" class="main-nav__link main-nav__link--delivery">
-            Доставка
-          </a>
-          <a href="contacts.html" class="main-nav__link main-nav__link--contacts">
-            Контакты
-          </a>
-        </nav> -->
-
-
         <?php
             wp_nav_menu( array(
               'menu_class'=>'footer__main-nav main-nav',
@@ -63,6 +54,7 @@
                 'after'=>''
             ) );
           ?>
+
         <div class="footer__contacts-links contacts-links">
 
           <a href="" class="contacts-link contacts-link--mail">
@@ -103,7 +95,7 @@
         <div class="bid__block">
 
           <h2 class="bid__title">Оставить заявку</h2>
-          
+
           <?= do_shortcode('[contact-form-7 id="33" title="Форма связи"]'); ?>
 
           <div class="bid__close-btn"></div>
