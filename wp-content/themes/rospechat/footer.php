@@ -37,7 +37,7 @@
           <img src="<?= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
         </a>
 
-        <nav class="footer__main-nav main-nav">
+        <!-- <nav class="footer__main-nav main-nav">
           <a href="services.html" class="main-nav__link main-nav__link--services">
             Услуги
           </a>
@@ -53,8 +53,16 @@
           <a href="contacts.html" class="main-nav__link main-nav__link--contacts">
             Контакты
           </a>
-        </nav>
+        </nav> -->
 
+
+        <?php
+            wp_nav_menu( array(
+              'menu_class'=>'footer__main-nav main-nav',
+                'theme_location'=>'bottom',
+                'after'=>''
+            ) );
+          ?>
         <div class="footer__contacts-links contacts-links">
 
           <a href="" class="contacts-link contacts-link--mail">
@@ -95,25 +103,9 @@
         <div class="bid__block">
 
           <h2 class="bid__title">Оставить заявку</h2>
+          
+          <?= do_shortcode('[contact-form-7 id="33" title="Форма связи"]'); ?>
 
-          <form action="/" method="post" class="bid__form">
-            <div class="bid__form-top">
-
-              <label for="name">
-                <input class="bid__input" id="name" type="text" placeholder="Имя*" required>
-              </label>
-
-              <label for="tel">
-                <input class="bid__input" id="tel" type="tel" placeholder="Телефон*" required>
-              </label>
-
-              <button type="submit" class="bid__submit">Оставить заявку</button>
-            </div>
-
-            <input type="checkbox" name="conf" id="conf" class="visually-hidden">
-            <label for="conf" class="bid__label-conf">Согласен на обработку персональных данных</label>
-
-          </form>
           <div class="bid__close-btn"></div>
 
         </div>

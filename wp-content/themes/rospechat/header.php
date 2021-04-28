@@ -17,8 +17,6 @@
 
       <header class="main-header header">
 
-
-
         <a href="/" class="header__logo-link logo-link">
           <img src="<?= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
         </a>
@@ -30,28 +28,7 @@
                 'after'=>''
             ) );
           ?>
-        <nav class="header__main-nav main-nav header__main-nav--closed">
 
-          <!-- <div class="main-nav__list">
-            <a href="services.html" class="main-nav__link main-nav__link--services">
-              Услуги
-            </a>
-            <a href="about-us.html" class="main-nav__link main-nav__link--about-us">
-              О нас
-            </a>
-            <a href="price.html" class="main-nav__link main-nav__link--price">
-              Цены
-            </a>
-            <a href="delivery.html" class="main-nav__link main-nav__link--delivery">
-              Доставка
-            </a>
-            <a href="contacts.html" class="main-nav__link main-nav__link--contacts">
-              Контакты
-            </a>
-            <a href="#" class="request request--mobile">Оставить заявку</a>
-          </div>
-          <button type="button" class="header__btn main-nav__toggle"></button>
-        </nav> -->
         <button type="button" class="header__btn main-nav__toggle"></button>
         <div class="header__contacts-links contacts-links">
           <a href="" class="contacts-link contacts-link--mail">

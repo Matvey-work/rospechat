@@ -21,12 +21,20 @@ function page_body_class( $classes ) {
     $classes[] = 'page-body--bg';
   }
     return $classes;
-}
+};
 
 register_nav_menus(array(
   'top' => 'Верхнее меню',
   'bottom' => 'Нижнее меню',
 ));
+
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+function my_wp_nav_menu_args( $args='' ){
+  
+  $args['container'] = '';
+
+  return $args;
+}
 
 
 
