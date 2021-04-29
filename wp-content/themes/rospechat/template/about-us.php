@@ -2,6 +2,16 @@
 /**
  * Template Name: About-us page
  */
+
+$custom_fields = get_post_meta($post->ID);
+$arrSlide = [];
+
+for($i = 0; $i < $custom_fields["images"][0]; $i++){
+  $img_id = $custom_fields["images_" . $i . "_slide_img"][0];
+  $arrSlide[] = wp_get_attachment_url($img_id);
+}
+
+// echo "<pre>",var_dump($arrSlide),"</pre>";
 ?>
 
 <?php get_header(); ?>
@@ -34,9 +44,14 @@
             Наше предприятие располагает обширной производственной базой, осуществляет эффективную реализацию проектов любой сложности. В работу принимаются заявки, связанные с распечаткой, копированием и сканированием чертежей, а также смежной документации.
           </p>
           <div class="our-production__slider">
-            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
-            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
-            <div><img src="<?= get_template_directory_uri() ?>/assets/img/our-production-img-slider.jpg" alt=""></div>
+
+          <?php foreach($arrSlide as $link): ?>
+            <div>
+              <img src="<?= $link ?>" alt="">
+            </div>
+          <?php endforeach ?>
+
+
           </div>
         </div>
         <div class="our-poduction__block-bottom-right">

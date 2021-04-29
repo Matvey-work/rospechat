@@ -1874,20 +1874,21 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
       .contact-us__block-right::after {
         top: 40%; } }
 
-.print-drawing {
+.drawing.block-left {
   font-family: "Futura PT";
   position: relative;
+  margin-bottom: 100px;
   background-color: #f6f6f6;
-  background-image: url("../img/print-drawing-img.jpg");
   background-position: left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 578px; }
   @media (max-width: 600px) {
-    .print-drawing {
+    .drawing.block-left {
+      margin-bottom: 10px;
       background-image: none;
       height: 400px; } }
-  .print-drawing::before {
+  .drawing.block-left::before {
     position: absolute;
     content: "";
     top: 102px;
@@ -1898,32 +1899,33 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-position: 50% 0;
     background-repeat: no-repeat; }
     @media (max-width: 1800px) {
-      .print-drawing::before {
+      .drawing.block-left::before {
         display: none; } }
 
-.print-drawing__block {
+.drawing.block-left .drawing__block {
   margin-left: auto;
   margin-right: 0;
   background-color: #432534; }
   @media (max-width: 600px) {
-    .print-drawing__block {
+    .block-left .drawing__block {
       margin-left: auto;
       margin-right: auto; } }
 
-.copy-drawing {
+.drawing.block-right {
   font-family: "Futura PT";
   position: relative;
+  margin-bottom: 100px;
   background-color: #f6f6f6;
-  background-image: url("../img/copy-drawing-img.jpg");
   background-position: right 50%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 578px; }
   @media (max-width: 600px) {
-    .copy-drawing {
+    .drawing.block-right {
+  margin-bottom: 10px;
       background-image: none;
       height: 400px; } }
-  .copy-drawing::before {
+  .drawing.block-right::before {
     position: absolute;
     content: "";
     top: 102px;
@@ -1934,10 +1936,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     background-position: 50% 0;
     background-repeat: no-repeat; }
     @media (max-width: 1800px) {
-      .copy-drawing::before {
+      .drawing.block-right::before {
         display: none; } }
 
-.copy-drawing__block {
+.drawing.block-right .drawing__block {
   margin-right: auto;
   margin-left: 0;
   background-color: #183a37;
@@ -1945,21 +1947,24 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   height: 265px;
   padding-left: 35px; }
   @media (max-width: 600px) {
-    .copy-drawing__block {
+    .drawing.block-right .drawing__block {
+      width: 265px;
+      height: 285px;
+      padding-left: 15px;
       margin-left: auto;
       margin-right: auto; } }
 
-.copy-drawing__text.drawing__text {
+.drawing__text {
   width: 500px; }
   @media (max-width: 600px) {
-    .copy-drawing__text.drawing__text {
+    .drawing__text {
       width: 260px; } }
 
-.folding-drawing {
+/* .folding-drawing {
   font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
-  background-image: url("../img/folding-drawing-img.jpg");
+
   background-position: left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1995,7 +2000,6 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
-  background-image: url("../img/scan-drawing-img.jpg");
   background-position: right 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2034,7 +2038,6 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   font-family: "Futura PT";
   position: relative;
   background-color: #f6f6f6;
-  background-image: url("../img/stitching-drawing-img.jpg");
   background-position: left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2064,7 +2067,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
   @media (max-width: 600px) {
     .stitching-drawing__block {
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; } } */
 
 .main__privacy {
   font-family: "Futura PT";
@@ -2352,7 +2355,25 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
       display: none !important; } }
 
 .our-production__slider .slick-slide img {
-  max-width: 100%; }
+  max-width: 1200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .our-production__slider .slick-slide img {
+    max-width: 860px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 600px) {
+  .our-production__slider .slick-slide img {
+
+    height: 158px;
+  }
+
+}
 
 .our-poduction__block-bottom-right {
   background-color: #432534;

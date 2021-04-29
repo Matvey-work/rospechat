@@ -1,3 +1,18 @@
+function switchMenu(){
+  let link = window.location.pathname
+  let path = [
+    '/uslugi/pechat-chertezhej/',
+    '/uslugi/kopirovanie-chertezhej/',
+    '/uslugi/falczovka-chertezhej/',
+    '/uslugi/skanirovanie-chertezhej/',
+    '/uslugi/broshyurovka/'
+  ];
+
+  if(path.indexOf(link) != -1){
+      $('#menu-item-12').addClass('current-menu-item')
+  }
+}
+
 $(document).ready(function(){
   $('.sliders').slick({
     infinite: true,
@@ -25,7 +40,12 @@ $(document).ready(function(){
     adaptiveHeight: true,
     cssEase: 'linear',
   });
+
+
+  switchMenu();
 });
+
+
 
 // let btnRequest = $('.request');
 let navMain = document.querySelector('.header__main-nav');
@@ -71,15 +91,6 @@ let bidCloseButton = document.querySelector('.bid__close-btn');
 let questionsClick = document.querySelector('.popular-questions__item-hidden');
 
 
-// let btnRequest = document.querySelector('.request');
-// console.log(btnRequest);
-
-// btnRequest.addEventListener('click', (evt) => {
-//   // console.log(123);
-//   evt.preventDefault();
-//   // console.log(123);
-//   popupBid.classList.remove('hidden');
-// });
 
 $(bidCloseButton).on('click', () => {
   $('.bid').addClass('hidden');
@@ -111,5 +122,16 @@ $(document).on('click', '.types-service__btn', function() {
   // console.log($('.item-table'));
 });
 
+$('.main-nav__link a').click(function() {
 
+  //optional - override the link - uncomment the following line:
+  // e.preventDefault();
+
+  //remove the active class from all li elements
+  $('.main-nav li').removeClass('main-nav__link--active');
+
+  //add it to the li element holding the clicked link
+  $('.main-nav li').addClass('main-nav__link--active');
+
+  });
 
