@@ -3424,7 +3424,7 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 
 .bid__submit {
   height: 58px;
-  background-color: #04151F;
+  background-color: #183A37;
   margin-left: 15px;
   font-style: normal;
   font-weight: 450;
@@ -3546,6 +3546,10 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.wpcf7-response-output {
+  display: none;
 }
 
 /* .bid__label-conf::before {
