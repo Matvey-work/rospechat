@@ -2,6 +2,9 @@
 /**
  * Template Name: Contacts page
  */
+$custom_fields = get_post_meta($post->ID);
+
+// echo "<pre>",var_dump($custom_fields),"</pre>";
 ?>
 
 <?php get_header(); ?>
@@ -18,17 +21,26 @@
             <div class="our-contacts__adress-top">
               <h3>Санкт-Петербург</h3>
               <div class="block-contacts">
-                <a href="mailto:artur@s-copy.spb.ru" class="our-contacts__mail">artur@s-copy.spb.ru</a>
-                <a href="tel:+78123091479" class="our-contacts__tel">8 (812) 309-14-79</a>
-                <p class="our-contacts__adress">22-я линия Васильевского острова 3, корп. 3</p>
+                <a href="mailto:<?= $custom_fields["email_piter"][0] ?>" class="our-contacts__mail"><span><?= $custom_fields["email_piter"][0] ?></span></a>
+
+                <a href="tel:<?= str_replace(["-", " ", "(", ")"], "", $custom_fields["tel_piter"][0])?>" class="our-contacts__tel"><span><?= $custom_fields["tel_piter"][0] ?></span></a>
+
+                <p class="our-contacts__adress"><?= $custom_fields["adress_piter"][0] ?></p>
               </div>
             </div>
+            
             <div class="our-contacts__adress-bottom">
               <h3>Москва</h3>
               <div class="block-contacts">
-                <a href="mailto:artur@s-copy.spb.ru" class="our-contacts__mail">artur@s-copy.spb.ru</a>
-                <a href="tel:+78123091479" class="our-contacts__tel">8 (812) 309-14-79</a>
-                <p class="our-contacts__adress">Октябрьская улица, 80с2</p>
+              <a href="mailto:<?= $custom_fields["email_moscow"][0] ?>" class="our-contacts__mail"><span><?= $custom_fields["email_moscow"][0] ?></span></a>
+
+
+                <a href="tel:<?= str_replace(["-", " ", "(", ")"], "", $custom_fields["tel_moscow"][0])?>" class="our-contacts__tel"><span><?= $custom_fields["tel_moscow"][0] ?></span></a>
+
+
+                <p class="our-contacts__adress"><?= $custom_fields["adress_moscow"][0] ?></p>
+
+
               </div>
             </div>
           </div>
