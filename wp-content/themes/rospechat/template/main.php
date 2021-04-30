@@ -5,12 +5,20 @@
 $custom_fields = get_post_meta($post->ID);
 $arrSlide = [];
 
+
+$img_director = $custom_fields["img_director"][0];
+
+
 for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
   $img_id = $custom_fields["slider_image_" . $i . "_img"][0];
   $arrSlide[] = wp_get_attachment_url($img_id);
 }
-// echo "<pre>",var_dump($arrSLide),"</pre>";
+
+
+// echo "<pre>",var_dump($custom_fields),"</pre>";
 ?>
+
+
 
 
 
@@ -19,10 +27,10 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 <div class="express-print">
         <div class="express-print__container container">
           <div class="express-print__block-left">
-            <h2 class="express-print__title">Срочная печать</h2>
-            <p class="express-print__sub-title">чертежей и проектов</p>
-            <p class="express-print__text">Мы печатаем — Вы все успеваете!</p>
-            <a href="#" class="express-print__get-price">Узнать стоимость</a>
+            <h2 class="express-print__title"><?= $custom_fields["main_title"][0] ?></h2>
+            <p class="express-print__sub-title"><?= $custom_fields["main_sub_title"][0] ?></p>
+            <p class="express-print__text"><?= $custom_fields["main_text"][0] ?></p>
+            <a href="#" class="express-print__get-price open-form">Узнать стоимость</a>
           </div>
           <div class="express-print__block-right"></div>
         </div>
@@ -31,20 +39,27 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
       <section class="director">
         <div class="director__container container">
-          <div class="director__block-left">
-            <p class="director__name">Антон Антонов</p>
-            <span class="director__sub-title">Ген. директор</span>
+          <div class="director__block-left" ">
+          <div class="director__img" style="background-image: url(<?= wp_get_attachment_url($img_director) ?>);"></div>
+            <p class="director__name"><?= $custom_fields["title_director"][0] ?></p>
+            <span class="director__sub-title"><?= $custom_fields["description_director"][0] ?></span>
           </div>
           <div class="director__block-right">
-            <h2 class="director__word">Слово генирального директора</h2>
+
+            <h2 class="director__word"><?= $custom_fields["title_block"][0] ?></h2>
+
             <p class="director__text-top">
-              Лаборатория инженерной печати CopyHub - это команда опытных инженеров с высшим образованием, которые хорошо знают, что такое работа с проектной и инженерной документацией.
+
+            <?= $custom_fields["top_text_block"][0] ?>
+
             </p>
             <p class="director__text-center">
-              Поэтому мы точно можем определить сроки выполнения заказа, знаем как подготовить документацию, чтобы ее приняли при подачах в госструктуры или Заказчику.
+
+            <?= $custom_fields["center_text_block"][0] ?>
+
             </p>
             <p class="director__text-bottom">
-              Также мы можем предварительно проверить ваш проект прежде чем приступить к печати, чтобы убедиться в отсутствии ошибок.
+            <?= $custom_fields["bottom_text_block"][0] ?>
             </p>
           </div>
 
@@ -101,14 +116,14 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
               <div class="block-inset">
                 <p class="block-inset__text-top">Печать чертежей</p>
                 <p class="block-inset__text-bottom">Широкоформатная печать</p>
-                <a href="print-drawing.html">Подробнее</a>
+                <a href="/uslugi/pechat-chertezhej/">Подробнее</a>
               </div>
             </div>
             <div class="services__block-left-bottom">
               <div class="block-inset">
                 <p class="block-inset__text-top">Сканирование чертежей</p>
                 <p class="block-inset__text-bottom">Широкоформатная печать</p>
-                <a href="scan-drawing.html">Подробнее</a>
+                <a href="/uslugi/skanirovanie-chertezhej/">Подробнее</a>
               </div>
             </div>
           </div>
@@ -117,21 +132,21 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
               <div class="block-inset">
                 <p class="block-inset__text-top">Фальцовка чертежей</p>
                 <p class="block-inset__text-bottom">Широкоформатная печать</p>
-                <a href="folding-drawing.html">Подробнее</a>
+                <a href="/uslugi/falczovka-chertezhej/">Подробнее</a>
               </div>
             </div>
             <div class="services__block-right-bottom">
               <div class="block-inset">
                 <p class="block-inset__text-top">Копирование чертежей</p>
                 <p class="block-inset__text-bottom">Широкоформатная печать</p>
-                <a href="copy-drawing.html">Подробнее</a>
+                <a href="/uslugi/kopirovanie-chertezhej/">Подробнее</a>
               </div>
             </div>
             <div class="services__request">
               <p class="services__request-text">
                 Оставьте свои контакты и получите максимально выгодное предложение
               </p>
-              <a href="#" class="services__request-link">Оставить заявку</a>
+              <a href="#" class="services__request-link open-form">Оставить заявку</a>
             </div>
           </div>
         </div>
@@ -151,32 +166,33 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
       <section class="our-team">
         <div class="container">
-          <span class="our-team__sup-title">Наша команда</span>
-          <h2 class="our-team__title">Самое главное в любой команде- это люди</h2>
+          <span class="our-team__sup-title"><?= $custom_fields["sup_title_our_team"][0] ?></span>
+
+          <h2 class="our-team__title"><?= $custom_fields["title_our_team"][0] ?></h2>
+
           <p class="our-team__sub-title">
-            Поэтому мы точно можем определить сроки выполнения заказа, знаем как подготовить документацию, чтобы ее приняли при подачах в госструктуры или Заказчику.
+
+          <?= $custom_fields["main_text_our_team"][0] ?>
+
           </p>
+
           <div class="our-team__list">
+
+          <?php for($n = 0; $n < $custom_fields["sotrudnik"][0]; $n++):?>
+            <? $img_id_our_team = $custom_fields["sotrudnik_" . $n . "_img_our_team"][0]; ?>
+
             <div class="our-team__item">
-              <img src="<?= get_template_directory_uri() ?>/assets/img/elena.jpg" alt="" class="our-team__img" width="270px" height="280px">
-              <p class="our-team__name">Елена Сверидова</p>
-              <p class="our-team__position">Менеджер по печати</p>
+
+
+              <img src="<?= wp_get_attachment_url($img_id_our_team) ?>" alt="" class="our-team__img" width="270px" height="280px">
+
+              <p class="our-team__name"><?= get_field("sotrudnik_". $n ."_name_our_team") ?></p>
+
+              <p class="our-team__position"><?= get_field("sotrudnik_". $n ."_position_our_team") ?> </p>
+
             </div>
-            <div class="our-team__item">
-              <img src="<?= get_template_directory_uri() ?>/assets/img/oleg.jpg" alt="" class="our-team__img" width="270px" height="280px">
-              <p class="our-team__name">Олег Крепенко</p>
-              <p class="our-team__position">Расчетный менеджер</p>
-            </div>
-            <div class="our-team__item">
-              <img src="<?= get_template_directory_uri() ?>/assets/img/ekaterina.jpg" alt="" class="our-team__img" width="270px" height="280px">
-              <p class="our-team__name">Екатерина Петрова</p>
-              <p class="our-team__position">Ведущий маркетолог</p>
-            </div>
-            <div class="our-team__item">
-              <img src="<?= get_template_directory_uri() ?>/assets/img/alexander.jpg" alt="" class="our-team__img" width="270px" height="280px">
-              <p class="our-team__name">Александр Серов</p>
-              <p class="our-team__position">Финансовый директор</p>
-            </div>
+            <?php endfor; ?>
+
           </div>
         </div>
       </section>

@@ -43,7 +43,7 @@ register_sidebar( $args );
         </div>
 
         </div>
-        <a href="#" class="request">Оставить заявку</a>
+        <a href="#" class="request open-form">Оставить заявку</a>
       </header>
     </div>
 

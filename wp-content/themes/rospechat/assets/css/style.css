@@ -846,7 +846,7 @@ template {
   @media (max-width: 1023px) {
     .director__block-left {
       display: none; } }
-  .director__block-left::before {
+  .director__img {
     position: absolute;
     content: "";
     top: -100px;
@@ -858,14 +858,14 @@ template {
     background-repeat: no-repeat;
     background-size: contain; }
     @media (max-width: 1280px) {
-      .director__block-left::before {
+      .director__img {
         width: 290px;
         height: 430px;
         top: -50px;
         right: auto;
         left: -10px; } }
     @media (max-width: 1600px) {
-      .director__block-left::before {
+      .director__img {
         width: 290px;
         height: 430px;
         top: -50px;
@@ -3549,7 +3549,33 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 }
 
 .wpcf7-response-output {
-  display: none;
+
+  position: absolute;
+  top: -12%;
+  left: 30%;
+  width: 270px;
+  height: auto;
+  color: #CB000D;
+
+}
+
+.wpcf7 form.failed .wpcf7-response-output {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  /* border: none; */
+
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #04151F;
 }
 
 /* .bid__label-conf::before {
@@ -3587,4 +3613,8 @@ input[type="checkbox"]:checked + .contact-us__confirm::after {
 .ymaps-2-1-78-controls__control {
   margin-left: 96vw!important;
   margin-right: 0;
+}
+
+.ymaps-2-1-78-controls__toolbar_left .ymaps-2-1-78-controls__control_toolbar.ymaps-2-1-78-user-selection-none {
+  margin-left: 85vw!important;
 }

@@ -19,7 +19,7 @@ for ($i = 0; $i < $custom_fields["uslugi_block"][0]; $i++) {
   ];
 }
 
-// echo "<pre>",var_dump(unserialize($custom_fields["uslugi_block_4_link"][0])["url"]),"</pre>";
+echo "<pre>",var_dump(($custom_fields["uslugi_block_4_link"][0])),"</pre>";
 ?>
 
 <?php get_header(); ?>

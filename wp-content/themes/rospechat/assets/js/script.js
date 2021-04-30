@@ -96,7 +96,7 @@ $(bidCloseButton).on('click', () => {
   $('.bid').addClass('hidden');
 });
 
-$(document).on('click', 'a.request', function () {
+$(document).on('click', 'a.open-form', function () {
   $(popupBid).removeClass('hidden');
 });
 
@@ -122,16 +122,5 @@ $(document).on('click', '.types-service__btn', function() {
   // console.log($('.item-table'));
 });
 
-$('.main-nav__link a').click(function() {
 
-  //optional - override the link - uncomment the following line:
-  // e.preventDefault();
-
-  //remove the active class from all li elements
-  $('.main-nav li').removeClass('main-nav__link--active');
-
-  //add it to the li element holding the clicked link
-  $('.main-nav li').addClass('main-nav__link--active');
-
-  });
 
