@@ -28,7 +28,7 @@ $custom_fields = get_post_meta($post->ID);
                 <p class="our-contacts__adress"><?= $custom_fields["adress_piter"][0] ?></p>
               </div>
             </div>
-            
+
             <div class="our-contacts__adress-bottom">
               <h3>Москва</h3>
               <div class="block-contacts">
@@ -49,41 +49,6 @@ $custom_fields = get_post_meta($post->ID);
 
       </section>
 
-      <section class="popular-questions popular-questions--contacts">
-        <div class="container">
-          <h2 class="popular-questions__title">
-            Популярные вопросы
-          </h2>
-          <p class="popular-questions__text">
-            Собрали самые частые вопросы, которые возникают у клиентов перед тем, как отдать в печать проекты.
-          </p>
-          <ul class="popular-questions__list">
-            <li class="popular-questions__item"><span>
-              В каком формате отправляются проекты для печати?
-            </span></li>
-            <li class="popular-questions__item-hidden">
-              Файлы принимаются в PDF-формате. Для редактирование других форматов применяется повышающий коэффициент 1.3.
-            </li>
-            <li class="popular-questions__item"><span>
-              Какими курьерскими службами доставляете заказ?
-            </span></li>
-            <li class="popular-questions__item-hidden">
-              Работаем с такими курьерскими службами: СДЭК, Деловые Линии, ДПД, Почта России. Бесплатная доставка курьерской службой по Санкт-Петербургу осуществляется при условии, что сумма заказа составляет 4 500 рублей и более. Стоимость доставки по России рассчитывается индивидуально.
-            </li>
-            <li class="popular-questions__item"><span>
-              Как упаковываете заказ перед отправкой?
-            </span></li>
-            <li class="popular-questions__item-hidden">
-              Заказ упаковывается в водонепроницаемый пакет или картонную коробку (исходя от размеров заказа).
-            </li>
-            <li class="popular-questions__item"><span>
-              Можно ли внести незначительные правки в проект во время печать?
-            </span></li>
-            <li class="popular-questions__item-hidden">
-              Если инженеры перед печатью обнаружат ошибки, то их можно будет исправить после согласования с заказчиком.
-            </li>
-          </ul>
-        </div>
-      </section>
+      <?php get_template_part('template/pop-questions'); ?>
 
 <?php get_footer(); ?>
