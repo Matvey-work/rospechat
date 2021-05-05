@@ -11,6 +11,7 @@ $img_director = $custom_fields["img_director"][0];
 $top_img = $custom_fields["top_img"][0];
 
 
+
 for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
   $img_id = $custom_fields["slider_image_" . $i . "_img"][0];
   $arrSlide[] = wp_get_attachment_url($img_id);
@@ -19,7 +20,6 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
 // echo "<pre>",var_dump($custom_fields),"</pre>";
 ?>
-
 
 
 
@@ -69,44 +69,8 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
         </div>
       </section>
-      <section class="features features--bg">
-        <p class="features__text-top">Преимущества</p>
-        <div class="container">
-          <div class="features__block-left">
-            <h2 class="features__title">Почему мы</h2>
-            <ul class="features__list">
-              <li class="features__item">
-                <span class="features__item-number">' 01</span>
-                <p class="features__item-text-top">Гарантия качества</p>
-                <p class="features__item-text-bottom">
-                  Сертифицированные расходные материалы
-                 </p>
-              </li>
-              <li class="features__item">
-                <span class="features__item-number">' 02</span>
-                <p class="features__item-text-top">Современное оборудование</p>
-                <p class="features__item-text-bottom">
-                  При распечатке задействуется специализированная техника
-                 </p>
-              </li>
-              <li class="features__item">
-                <span class="features__item-number">' 03</span>
-                <p class="features__item-text-top">Оперативность</p>
-                <p class="features__item-text-bottom">
-                  Заявки выполняются в сжатые сроки
-                 </p>
-              </li>
-              <li class="features__item">
-                <span class="features__item-number">' 04</span>
-                <p class="features__item-text-top">Индивидуальный подход</p>
-                <p class="features__item-text-bottom">
-                  Каждый заказчик обслуживается персональным менеджером
-                 </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+
+      <?php get_template_part('template/features') ?>
 
       <section class="services services--bg">
         <div class="services__container container">
