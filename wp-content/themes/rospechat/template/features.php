@@ -6,12 +6,13 @@
 
 $custom_fields = get_post_meta(263);
 
-
+$features_img = $custom_fields["features_img"][0];
 // echo "<pre>",var_dump($custom_fields),"</pre>";
 
 ?>
 
       <section class="features features--bg">
+        <div class="features__img" style="background-image: url(<?= wp_get_attachment_url($features_img) ?>);"></div>
         <p class="features__text-top"><?= $custom_fields["name_title_features"][0]; ?></p>
         <div class="container">
           <div class="features__block-left">

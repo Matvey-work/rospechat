@@ -3,7 +3,9 @@
  * Template Name: Price page
  */
 
+$custom_fields = get_post_meta($post->ID);
 
+// echo "<pre>",var_dump($custom_fields),"</pre>";
 ?>
 
 <?php get_header(); ?>
@@ -11,15 +13,17 @@
 
       <section class="service-cost">
         <div class="service-cost__block-left">
-          <h2 class="service-cost__title">Стоимость услуг</h2>
+          <h2 class="service-cost__title"><?= $custom_fields["title_price"][0]; ?></h2>
         </div>
         <div class="service-cost__container container">
           <div class="service-cost__block-text">
             <p class="service-cost__text">
-              Заказчикам доступна цветная и черно-белая печать. Возможна работа с чертежами, графиками, диаграммами, топографическими планами и текстом. Также в наличии услуги по копированию и сканированию документов, их брошюровке и фальцовке. Операции выполняются согласно отраслевым нормативам, что гарантирует достижение безупречного результата.
+            <?= $custom_fields["top_text_price"][0]; ?>
+
             </p>
             <p class="service-cost__text">
-              Содействие в оформлении заказа оказывают штатные консультанты. Они информируют о параметрах сотрудничества, предлагают решения, соответствующие пожеланиям клиента. Специалисты расскажут о требованиях к исходным материалам, сроках выполнения работ, действующих расценках. Для формирования заявки воспользуйтесь телефоном или функционалом сайта. Будем рады Вашему обращению!
+            <?= $custom_fields["bottom_text_price"][0]; ?>
+
             </p>
           </div>
         </div>
@@ -550,7 +554,6 @@
               </table>
             </div>
 
-            <!--  -->
           </div>
         </div>
       </section>

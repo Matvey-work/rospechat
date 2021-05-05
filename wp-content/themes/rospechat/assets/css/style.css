@@ -920,20 +920,21 @@ template {
   @media (min-width: 1300px) {
     .features {
       margin-top: 170px; } }
-  .features--bg::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 43%;
-    height: 100%;
-    background-image: url("../img/features-img.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media (max-width: 1280px) {
-      .features--bg::before {
-        display: none; } }
+
+.features__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 43%;
+  height: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1280px) {
+  .features__img {
+    display: none; } }
 
 .features__text-top {
   position: absolute;
