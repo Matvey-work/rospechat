@@ -506,20 +506,6 @@ template {
   margin: 0;
   padding: 0;
   font-family: "Futura PT", "Arial", sans-serif; }
-  .page-body--bg::before {
-    content: "";
-    position: absolute;
-    width: 47%;
-    height: 670px;
-    top: 77px;
-    right: 0;
-    background-image: url("../img/express-print-img.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    @media (max-width: 1280px) {
-      .page-body--bg::before {
-        display: none; } }
 
 .main {
   display: flex;
@@ -742,6 +728,23 @@ template {
   @media (max-width: 600px) {
     .express-print {
       min-height: 400px; } }
+
+.express-print__img {
+  position: absolute;
+  width: 47%;
+  height: 670px;
+  top: 77px;
+  right: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1280px) {
+  .express-print__img {
+    display: none;
+  }
+}
 
 .express-print__container {
   display: flex;

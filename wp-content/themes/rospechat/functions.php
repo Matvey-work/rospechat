@@ -15,6 +15,7 @@ function all_scripts() {
 add_action( 'wp_enqueue_scripts', 'all_scripts' );
 
 add_filter( 'body_class','page_body_class');
+
 function page_body_class( $classes ) {
 
   if (is_front_page()) {

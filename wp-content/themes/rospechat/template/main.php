@@ -8,6 +8,8 @@ $arrSlide = [];
 
 $img_director = $custom_fields["img_director"][0];
 
+$top_img = $custom_fields["top_img"][0];
+
 
 for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
   $img_id = $custom_fields["slider_image_" . $i . "_img"][0];
@@ -24,7 +26,8 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
 <?php get_header(); ?>
 
-<div class="express-print">
+      <div class="express-print">
+        <div class="express-print__img" style="background-image: url(<?= wp_get_attachment_url($top_img) ?>);"></div>
         <div class="express-print__container container">
           <div class="express-print__block-left">
             <h2 class="express-print__title"><?= $custom_fields["main_title"][0] ?></h2>
