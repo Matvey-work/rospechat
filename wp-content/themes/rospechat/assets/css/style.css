@@ -1641,39 +1641,15 @@ div.slick-slide div.slider-img img {
   height: 170px;
   background-color: #f6f6f6;
   margin-bottom: 30px;
-  /* position: relative; */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
   @media (max-width: 1000px) {
     .delivery__item {
       margin-right: auto;
       margin-right: auto; } }
-  .delivery__item {
-    /* position: absolute; */
-    /* content: ""; */
-    /* width: 100%;
-    height: 100%; */
-    /* top: 0;
-    left: 0; */
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-  .delivery__item--pony::before {
-    background-image: url("../img/delivery1.svg"); }
-  .delivery__item--dhl::before {
-    background-image: url("../img/delivery2.svg"); }
-  .delivery__item--lines::before {
-    background-image: url("../img/delivery3.svg"); }
-  .delivery__item--pek::before {
-    background-image: url("../img/delivery4.svg"); }
-  .delivery__item--express::before {
-    background-image: url("../img/delivery5.svg"); }
-  .delivery__item--dpd::before {
-    background-image: url("../img/delivery6.svg"); }
-  .delivery__item--cdek::before {
-    background-image: url("../img/delivery7.svg"); }
-  .delivery__item--ups::before {
-    background-image: url("../img/delivery8.svg"); }
+
 
 .contact-us {
   font-family: "Futura PT";

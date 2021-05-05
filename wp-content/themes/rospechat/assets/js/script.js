@@ -86,15 +86,11 @@ const Keys = {
 
 let popupBid = document.querySelector('.bid');
 
-let bidCloseButton = document.querySelector('.bid__close-btn');
+// let bidCloseButton = document.querySelector('.bid__close-btn');
 
 let questionsClick = document.querySelector('.popular-questions__item-hidden');
 
 
-
-$(bidCloseButton).on('click', () => {
-  $('.bid').addClass('hidden');
-});
 
 $(document).on('click', 'a.open-form', function () {
   $(popupBid).removeClass('hidden');
@@ -122,5 +118,19 @@ $(document).on('click', '.types-service__btn', function() {
   // console.log($('.item-table'));
 });
 
+let wpcf7Elm = document.querySelector( '.wpcf7' );
 
+let bidThanks = document.querySelector('.bid__thanks');
+
+wpcf7Elm.addEventListener( 'wpcf7mailsent', function( evt ) {
+  // console.log( "Fire!" );
+  bidThanks.classList.remove('hidden');
+  document.body.appendChild(bidThanks);
+  // console.log(bidThanks);
+}, false );
+
+$(document).on('click', '.bid__close-btn', () => {
+
+  $('.bid').addClass('hidden');
+});
 

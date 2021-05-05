@@ -183,11 +183,16 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
       <section class="tech">
         <div class="container">
           <div class="tech__container">
-            <h2 class="tech__title">Техника, которую мы используем</h2>
-            <span class="tech__sub-title">Huawei liquid s2</span>
+            <h2 class="tech__title"><?= $custom_fields["title_tech"][0]; ?></h2>
+
+            <span class="tech__sub-title">
+              <?= $custom_fields["tech_brend"][0]; ?>
+            </span>
+
             <p class="tech__text">
-              Профессиональное печатное оборудование промышленного назначения. Плоттер осуществляет оперативную подготовку документов. Он работает с различными форматами листов, обеспечивает качественное нанесение текстовых и графических материалов. Интеллектуальная предпечатная подготовка исключает ошибки, неточности и визуальные дефекты.
+            <?= $custom_fields["text_tech"][0]; ?>
             </p>
+
             <div class="tech__bulets">
               <div class="tech__bulets-item tech__bulets-item--active"></div>
               <div class="tech__bulets-item"></div>
