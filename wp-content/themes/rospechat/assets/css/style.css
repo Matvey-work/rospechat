@@ -1641,20 +1641,23 @@ div.slick-slide div.slider-img img {
   height: 170px;
   background-color: #f6f6f6;
   margin-bottom: 30px;
-  position: relative; }
+  /* position: relative; */
+}
   @media (max-width: 1000px) {
     .delivery__item {
       margin-right: auto;
       margin-right: auto; } }
-  .delivery__item::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
+  .delivery__item {
+    /* position: absolute; */
+    /* content: ""; */
+    /* width: 100%;
+    height: 100%; */
+    /* top: 0;
+    left: 0; */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
   .delivery__item--pony::before {
     background-image: url("../img/delivery1.svg"); }
   .delivery__item--dhl::before {

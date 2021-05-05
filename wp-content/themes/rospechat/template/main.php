@@ -202,20 +202,7 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
         </div>
       </section>
 
-      <section class="delivery">
-        <div class="container">
-          <h2 class="delivery__title">Курьерские службы партнеры</h2>
-          <div class="delivery__list">
-            <div class="delivery__item delivery__item--pony"></div>
-            <div class="delivery__item delivery__item--dhl"></div>
-            <div class="delivery__item delivery__item--lines"></div>
-            <div class="delivery__item delivery__item--pek"></div>
-            <div class="delivery__item delivery__item--express"></div>
-            <div class="delivery__item delivery__item--dpd"></div>
-            <div class="delivery__item delivery__item--cdek"></div>
-            <div class="delivery__item delivery__item--ups"></div>
-          </div>
-        </div>
-      </section>
+      <?php get_template_part('template/delivery-services') ?>
+
 
 <?php get_footer(); ?>
