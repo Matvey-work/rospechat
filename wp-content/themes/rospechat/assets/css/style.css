@@ -3632,8 +3632,6 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    /* margin-left: 100px;  */
   }
 
 @media (max-width: 1280px) {
@@ -3884,7 +3882,6 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   position: relative;
   text-align: left;
   margin-top: 25px;
-  /* margin-left: 60px; */
   margin-right: auto;
 
   cursor: pointer;
@@ -4007,7 +4004,6 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   font-weight: normal;
   font-size: 20px;
   line-height: 22px;
-  /* border: none; */
 
 }
 
@@ -4020,7 +4016,7 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   color: #04151F;
 }
 
-/* .bid__label-conf::before {
+.bid__label-conf::before {
   position: absolute;
   content: "";
   top: 4px;
@@ -4029,16 +4025,16 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   height: 15px;
   border: 1px solid #432534;
   box-sizing: border-box;
-  border-radius: 2px; } */
+  border-radius: 2px; } 
 
-/* #conf:checked + .bid__label-conf::after {
+#conf:checked ~ .bid__label-conf::after {
   position: absolute;
   content: "\2713";
   top: 1px;
   left: -18px;
   width: 17px;
   height: 17px;
-} */
+}
 
 .widget_text.widget-block {
   list-style: none;
