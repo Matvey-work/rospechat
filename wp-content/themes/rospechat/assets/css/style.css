@@ -1711,7 +1711,6 @@ div.slick-slide div.slider-img img {
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
 }
   @media (max-width: 1000px) {
     .delivery__item {
