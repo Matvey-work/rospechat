@@ -3845,6 +3845,8 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
       margin-right: auto; } }
 
 @media (max-width: 800px) {
+  .bid__input:first-child {
+    margin-left: 23px; }
   .bid__input {
     margin-bottom: 10px; } }
 
@@ -3883,7 +3885,7 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   text-align: left;
   margin-top: 25px;
   margin-right: auto;
-
+  margin-left: 22px;
   cursor: pointer;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -3981,6 +3983,10 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   margin-right: 20px;
 }
 @media (max-width: 600px) {
+  .wpcf7-form p label:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .wpcf7-form p label {
     margin-left: auto;
     margin-right: auto;
@@ -4025,7 +4031,7 @@ input[type="checkbox"]:checked ~ .contact-us__confirm::after {
   height: 15px;
   border: 1px solid #432534;
   box-sizing: border-box;
-  border-radius: 2px; } 
+  border-radius: 2px; }
 
 #conf:checked ~ .bid__label-conf::after {
   position: absolute;
