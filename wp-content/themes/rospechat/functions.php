@@ -64,3 +64,21 @@ function footer_widgets(){
 	) );
 }
 add_action( 'widgets_init', 'footer_widgets' );
+
+add_filter( 'upload_mimes', 'svg_upload_allow' );
+
+# Добавляет SVG в список разрешенных для загрузки файлов.
+function svg_upload_allow( $mimes ) {
+  $mimes['svg']  = 'image/svg+xml';
+
+  return $mimes;
+}
+
+add_theme_support( 'custom-header', array(
+  'flex-width'    => true,
+  'width'         => 170,
+  'flex-height'    => true,
+  'height'        => 55,
+  'uploads'       => true,
+  'default-image' => get_template_directory_uri() . '/assets/img/logo.svg',
+) );

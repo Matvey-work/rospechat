@@ -1,5 +1,7 @@
 <?php
 register_sidebar( $args );
+
+// echo var_dump(header_image());
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +20,7 @@ register_sidebar( $args );
       <header class="main-header header">
 
         <a href="/" class="header__logo-link logo-link">
-          <img src="<?= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
         </a>
 
         <?php

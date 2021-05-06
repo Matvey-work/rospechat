@@ -28,9 +28,13 @@
   <footer class="main-footer">
 
       <div class="main-footer__container container">
-
+<!-- 
         <a href="/" class="logo-link">
-          <img src="<?= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
+          <img src="<?//= get_template_directory_uri() ?>/assets/img/logo.svg" alt="" class="logo-img" width="170" height="55">
+        </a> -->
+
+        <a href="/" class="header__logo-link logo-link">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
         </a>
 
         <?php

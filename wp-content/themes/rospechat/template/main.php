@@ -17,7 +17,7 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
   $arrSlide[] = wp_get_attachment_url($img_id);
 }
 
-
+echo get_custom_logo();
 // echo "<pre>",var_dump($custom_fields),"</pre>";
 ?>
 
