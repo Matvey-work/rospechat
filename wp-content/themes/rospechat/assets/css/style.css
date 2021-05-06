@@ -2067,6 +2067,7 @@ div.slick-slide div.slider-img img {
 
 .contact-us__confirm {
   position: relative;
+  cursor: pointer;
   font-style: normal;
   font-weight: 450;
   font-size: 16px;
