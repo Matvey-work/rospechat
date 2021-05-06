@@ -79,39 +79,40 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
             <p class="services__sub-title">
               Наша компания специализируется на распечатке и обработке технической документации.
             </p>
-            <div class="services__block-left-top">
+            <div class="services__block-left-top" style="background-image: url(<?= wp_get_attachment_url($custom_fields["block_uslugi_0_img_uslugi"][0]) ?>);">
               <div class="block-inset">
-                <p class="block-inset__text-top">Печать чертежей</p>
-                <p class="block-inset__text-bottom">Широкоформатная печать</p>
+                <p class="block-inset__text-top"><?= $custom_fields["block_uslugi_0_top_text_uslugi"][0] ?></p>
+                <p class="block-inset__text-bottom"><?= $custom_fields["block_uslugi_0_bottom_text_uslugi"][0] ?></p>
                 <a href="/uslugi/pechat-chertezhej/">Подробнее</a>
               </div>
             </div>
-            <div class="services__block-left-bottom">
+            <div class="services__block-left-bottom" style="background-image: url(<?= wp_get_attachment_url($custom_fields["block_uslugi_1_img_uslugi"][0]) ?>);">
               <div class="block-inset">
-                <p class="block-inset__text-top">Сканирование чертежей</p>
-                <p class="block-inset__text-bottom">Широкоформатная печать</p>
+                <p class="block-inset__text-top"><?= $custom_fields["block_uslugi_1_top_text_uslugi"][0] ?></p>
+                <p class="block-inset__text-bottom"><?= $custom_fields["block_uslugi_1_bottom_text_uslugi"][0] ?></p>
                 <a href="/uslugi/skanirovanie-chertezhej/">Подробнее</a>
               </div>
             </div>
           </div>
           <div class="services__block-right">
-            <div class="services__block-right-top">
+            <div class="services__block-right-top" style="background-image: url(<?= wp_get_attachment_url($custom_fields["block_uslugi_2_img_uslugi"][0]) ?>);">
               <div class="block-inset">
-                <p class="block-inset__text-top">Фальцовка чертежей</p>
-                <p class="block-inset__text-bottom">Широкоформатная печать</p>
+                <p class="block-inset__text-top"><?= $custom_fields["block_uslugi_2_top_text_uslugi"][0] ?></p>
+                <p class="block-inset__text-bottom"><?= $custom_fields["block_uslugi_2_bottom_text_uslugi"][0] ?></p>
                 <a href="/uslugi/falczovka-chertezhej/">Подробнее</a>
               </div>
             </div>
-            <div class="services__block-right-bottom">
+            <div class="services__block-right-bottom" style="background-image: url(<?= wp_get_attachment_url($custom_fields["block_uslugi_3_img_uslugi"][0]) ?>);">
               <div class="block-inset">
-                <p class="block-inset__text-top">Копирование чертежей</p>
-                <p class="block-inset__text-bottom">Широкоформатная печать</p>
+                <p class="block-inset__text-top"><?= $custom_fields["block_uslugi_3_top_text_uslugi"][0] ?></p>
+                <p class="block-inset__text-bottom"><?= $custom_fields["block_uslugi_3_bottom_text_uslugi"][0] ?></p>
                 <a href="/uslugi/kopirovanie-chertezhej/">Подробнее</a>
               </div>
             </div>
             <div class="services__request">
               <p class="services__request-text">
-                Оставьте свои контакты и получите максимально выгодное предложение
+              <?= $custom_fields["bottom_text_uslugi"][0] ?>
+
               </p>
               <a href="#" class="services__request-link open-form">Оставить заявку</a>
             </div>
@@ -120,12 +121,14 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
       </section>
 
       <section class="price price--bg">
+        <div class="price__img" style="background-image: url(<?= wp_get_attachment_url($custom_fields["price_img"][0]) ?>);"></div>
         <div class="container">
           <h2 class="price__title">
-            Хотите подробнее ознакомиться со стоимостью наших услуг
+            <?= $custom_fields["title_price"][0]; ?>
+
           </h2>
           <p class="price__sub-title">
-            Наша компания специализируется на распечатке и обработке технической документации.
+            <?= $custom_fields["price_sub_title"][0]; ?>
           </p>
           <a href="" class="price__link">Скачать прайс-лист</a>
         </div>
@@ -180,31 +183,43 @@ for($i = 0; $i < $custom_fields["slider_image"][0]; $i++){
 
       </section>
 
-      <section class="tech">
+      <section class="tech tech__slider">
+
+      <?php for($k = 0; $k < $custom_fields["slider_tech"][0]; $k++): ?>
+        <? $id_img = $custom_fields["slider_tech_" . $k . "_tech_img"][0]; ?>
         <div class="container">
           <div class="tech__container">
-            <h2 class="tech__title"><?= $custom_fields["title_tech"][0]; ?></h2>
+            <div class="tech__block-left">
+              <h2 class="tech__title">
+                <?= $custom_fields["slider_tech_" . $k . "_main_title_tech"][0]; ?>
+                <!-- Техника, которую мы используем! -->
+              </h2>
 
-            <span class="tech__sub-title">
-              <?= $custom_fields["tech_brend"][0]; ?>
-            </span>
+              <span class="tech__sub-title">
+              <?= $custom_fields["slider_tech_" . $k . "_sub_title_tech"][0]; ?>
+              Huawei liquid s2
+              </span>
 
-            <p class="tech__text">
-            <?= $custom_fields["text_tech"][0]; ?>
-            </p>
+              <p class="tech__text">
+              <?= $custom_fields["slider_tech_" . $k . "_text_tech"][0]; ?>
 
-            <div class="tech__bulets">
-              <div class="tech__bulets-item tech__bulets-item--active"></div>
-              <div class="tech__bulets-item"></div>
-              <div class="tech__bulets-item"></div>
-              <div class="tech__bulets-item"></div>
+              </p>
             </div>
-          </div>
+              <div class="tech__block-right">
+                <h2 class="tech__block-right-title">
+                <?= $custom_fields["slider_tech_" . $k . "_right_title"][0]; ?>
 
+                </h2>
+                <div class="tech__img" style="background-image: url(<?= wp_get_attachment_url($id_img) ?>);"></div>
+              </div>
+
+          </div>
         </div>
-        <div class="tech__block-right">
-          <h2 class="tech__block-right-title">Huawei liquid s2</h2>
-        </div>
+        <?php endfor; ?>
+
+
+
+
       </section>
 
       <?php get_template_part('template/delivery-services') ?>

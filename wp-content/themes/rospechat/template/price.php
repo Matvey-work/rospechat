@@ -70,73 +70,25 @@ $custom_fields = get_post_meta($post->ID);
           </div>
 
           <div class="types-service__item">
-            <div class="item-table visible">
+          <div class="item-table visible">
               <table width="100%">
                 <tr>
                   <th>Наименование работы (услуги)</th>
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["print_drawing"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["print_drawing_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["print_drawing_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["print_drawing_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
             <div class="item-table">
@@ -146,66 +98,18 @@ $custom_fields = get_post_meta($post->ID);
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["copy_drawing"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["copy_drawing_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["copy_drawing_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["copy_drawing_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
             <div class="item-table">
@@ -215,66 +119,42 @@ $custom_fields = get_post_meta($post->ID);
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
+                <?php for($i = 0; $i < $custom_fields["scan_drawing"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["scan_drawing_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["scan_drawing_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["scan_drawing_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
+
+              </table>
+            </div>
+
+
+            <div class="item-table">
+              <table width="100%">
                 <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
+                  <th>Наименование работы (услуги)</th>
+                  <th>Количество</th>
+                  <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["folding_drawing"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["folding_drawing_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["folding_drawing_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["folding_drawing_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
             <div class="item-table">
@@ -284,66 +164,18 @@ $custom_fields = get_post_meta($post->ID);
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["albums"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["albums_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["albums_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["albums_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
             <div class="item-table">
@@ -353,66 +185,18 @@ $custom_fields = get_post_meta($post->ID);
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["surcharges"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["surcharges_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["surcharges_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["surcharges_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
             <div class="item-table">
@@ -422,135 +206,18 @@ $custom_fields = get_post_meta($post->ID);
                   <th>Количество</th>
                   <th>Стоимость за ед. с НДС</th>
                 </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-              </table>
-            </div>
-            <div class="item-table">
-              <table width="100%">
-                <tr>
-                  <th>Наименование работы (услуги)</th>
-                  <th>Количество</th>
-                  <th>Стоимость за ед. с НДС</th>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
-                <tr>
-                  <td>Печать чертежей ч/б ф-т А4</td>
-                  <td>1</td>
-                  <td>от 1,5 руб</td>
-                </tr>
+                <?php for($i = 0; $i < $custom_fields["dop_services"][0]; $i++ ): ?>
+              <tr>
+
+                <td><?= $custom_fields["dop_services_" . $i . "_naimenovanie_uslugi"][0] ?></td>
+
+                <td><?= $custom_fields["dop_services_" . $i . "_kolichestvo"][0] ?></td>
+
+                <td><?= $custom_fields["dop_services_" . $i . "_stoimost"][0] ?></td>
+
+              </tr>
+              <?php endfor; ?>
+
               </table>
             </div>
 
@@ -559,12 +226,14 @@ $custom_fields = get_post_meta($post->ID);
       </section>
 
       <section class="price price--bg">
+      <div class="price__img" style="background-image: url(<?= wp_get_attachment_url($custom_fields["price_image"][0]) ?>);"></div>
         <div class="container">
           <h2 class="price__title">
-            Хотите подробнее ознакомиться со стоимостью наших услуг
+          <?= $custom_fields["price_title"][0]; ?>
+
           </h2>
           <p class="price__sub-title">
-            Наша компания специализируется на распечатке и обработке технической документации.
+          <?= $custom_fields["price_sub_title"][0]; ?>
           </p>
           <a href="" class="price__link">Скачать прайс-лист</a>
         </div>

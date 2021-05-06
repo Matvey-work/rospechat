@@ -9,22 +9,8 @@
             Оставьте свои контакты и получите максимально выгодное предложение по выполнению работ.
           </p>
 
-          <form class="contact-us__form" action="/" method="post">
-            <div class="contact-us__form-input">
-              <label for="name" class="form-name">
-                <input id="name" type="text" class="form-name-input" placeholder="Имя*" required>
-              </label>
-              <label for="tel" class="form-tel">
-                <input id="tel" type="tel" class="form-tel-input" placeholder="Телефон*" required>
-              </label>
-              <button type="submit" class="submit-form">Оставить заявку</button>
-            </div>
-            <div class="contact-us__checkbox">
-              <input type="checkbox" name="confirm" id="confirm" class="visually-hidden" required>
-              <label for="confirm" class="contact-us__confirm">Согласен на обработку персональных данных</label>
-            </div>
+          <?= do_shortcode('[contact-form-7 id="432" title="Контактная форма"]'); ?>
 
-          </form>
         </div>
         <div class="contact-us__block-right">
 

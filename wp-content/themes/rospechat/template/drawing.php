@@ -58,41 +58,54 @@ $table_title = $custom_fields["table_title"][0];
 
       <section class="how-work">
         <div class="container">
-          <h2 class="how-work__title">Как мы работаем</h2>
+          <h2 class="how-work__title"><?= $custom_fields["how_work_title"][0]; ?></h2>
+
           <p class="how-work__text">
-            Наша компания специализируется на распечатке и обработке технической документации, сотрудничает с частными лицами, коммерчески организациями и государственными учреждениями.
+
+          <?= $custom_fields["how_work_text"][0]; ?>
+
           </p>
           <div class="how-work__block">
             <div class="how-work__item">
               <p class="how-work__block-text-top how-work__block-text-top--registration">
-                Оформление заявки
+
+              <?= $custom_fields["text_top_first_card"][0]; ?>
+
               </p>
               <p class="how-work__block-text-bottom">
-                Клиент заказывает оказание определенных услуг по почте или телефону
+
+              <?= $custom_fields["text_bottom_first_card"][0]; ?>
+
               </p>
             </div>
             <div class="how-work__item">
               <p class="how-work__block-text-top how-work__block-text-top--calculation">
-                Расчет стоимости
+              <?= $custom_fields["text-top_second_card"][0]; ?>
+
               </p>
               <p class="how-work__block-text-bottom">
-                Специалисты компании согласовывают расходы на проведение работ
+              <?= $custom_fields["text_bottom_second_card"][0]; ?>
+
               </p>
             </div>
             <div class="how-work__item">
               <p class="how-work__block-text-top how-work__block-text-top--work">
-                Проведение работ
+              <?= $custom_fields["text_top_third"][0]; ?>
+
               </p>
               <p class="how-work__block-text-bottom">
-                Штатные специалисты приступают к выполнению заказанных работ
+              <?= $custom_fields["text_bottom_third_card"][0]; ?>
+
               </p>
             </div>
             <div class="how-work__item">
               <p class="how-work__block-text-top how-work__block-text-top--order">
-                Сдача<br> заказа
+              <?= $custom_fields["text_top_four_card"][0]; ?>
+
               </p>
               <p class="how-work__block-text-bottom">
-                В назначенный день клиент получает пакет документов либо цифровые копии
+              <?= $custom_fields["text_bottom_four_card"][0]; ?>
+                
               </p>
             </div>
           </div>
