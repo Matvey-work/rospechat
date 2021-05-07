@@ -132,7 +132,7 @@ $(document).on('click', '.types-service__btn', function() {
   // console.log($('.item-table'));
 });
 
-let wpcf7Elm = document.querySelector( '.wpcf7' );
+let wpcf7Elm = document.querySelector( '#wpcf7-f33-o2' );
 
 let bidThanks = document.querySelector('.bid__thanks');
 
@@ -145,38 +145,4 @@ $(document).on('click', '.bid__close-btn', () => {
   $('.bid').addClass('hidden');
 });
 
-// $('.tech__block-left--two').hide();
-// $('.tech__block-right--two').hide();
 
-// $(".btn1").click(function () {
-//   $(".tech__block-left--two").hide();
-//   $(".tech__block-right--two").hide();
-//   $(".tech__block-left--one").show();
-//   $(".tech__block-right--one").show();
-//   $(this).addClass('tech__bulets-item--active');
-//   $('.btn2').removeClass('tech__bulets-item--active');
-// });
-
-// $(".btn2").click(function () {
-//   $(".tech__block-left--one").hide();
-//   $(".tech__block-right--one").hide();
-//   $(".tech__block-left--two").show();
-//   $(".tech__block-right--two").show();
-//   $(this).addClass('tech__bulets-item--active');
-//   $('.btn1').removeClass('tech__bulets-item--active');
-
-// });
-
-// $('.tech__bulets-item').on('click', function() {
-//   $('.tech__block-left--two').hide();
-
-//   if ($(this).hasClass('tech__bulets-item--active')) {
-//     $('.tech__block-left').removeClass('hidden');
-//     $('.tech__block-right').removeClass('hidden');
-
-//   } else {
-//     $(this).removeClass('tech__bulets-item--active');
-//     $('.tech__block-left').addClass('hidden');
-//     $('.tech__block-right').addClass('hidden');
-//   }
-// });
